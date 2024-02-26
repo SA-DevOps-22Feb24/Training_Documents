@@ -1,0 +1,655 @@
+DevOps SA2312018 
+
+22nd Feb. 2024 
+
+8PM IST to 10:30 PM
+
+Appln. Development 
+
+Java Fundamentals 
+
+
+Python Fundamentals 
+SQL Fundamentals 
+
+
+Application Build
+
+AWS Fundamentals 
+
+Linux OS Fundamentals
+ 
+
+DevOps Modules 
+
+GIT 
+
+JENKINS
+
+
+AWS Fundamentals :
+
+	- 
+	
+Java Fundamentals 
+
+	- Create Java Web Applications & Console Applications 
+	- How to Build and Deploy the Java Web and Console Applications
+	- Application Development and Deployment Tools ::
+
+Practise Java  Fundamentals ::
+	- 
+	
+Python Fundamentals 
+
+	- Create Python Web Applications & Console Applications 
+	- How to Build and Deploy the Python Web and Console Applications
+	- Application Development and Deployment Tools
+
+
+AWS Fundamentals
+Linux Fundamentals
+
+Application Fundamental Modules :
+
+Java Fundamentals 
+
+Next :::
+
+	Python Fundamentals
+	SQL 
+	Build Tools - Maven
+
+DevOps Modules :::
+
+	GIT 
+	Jenkins 
+	Docker 
+	Ansible
+	Terraform 
+	Kubernetes
+	Prometheus
+	Grafana
+
+
+What is Application?
+
+How it is developed, build, tested and deployed ?
+
+What are the tools used for development, testing and development ?
+
+Next :::
+
+	Python Fundamentals
+	SQL 
+	Build Tools - Maven
+
+What is Linux ? What is the use? Why to Learn ?
+	What are the practical you did in Linux?
+	
+	Installation 
+	Shell Scripting 
+	create dir & Files
+	Permissions
+	RWX
+	Copying / Moving files
+	Create Users.
+	
+
+AWS :
+	AWS Free Tier Account Created ? 
+	Launched Ubuntu - EC2 Instance ?
+	Putty / Mobaxterm ?
+	
+	Connect to EC2 Instance using Putty/MobaXterm ?
+	
+Java : ***
+
+	- Fundamentals of Programming 
+	- In your Local Windows Machine
+		- jdk
+		- Eclipse 
+		- Tomcat
+		
+	- Create Java Web Applications & Console Applications ?
+	
+	- How to Build and Deploy the Java Web and Console Applications
+			- Maven to Create Java Console and Web Applications ?
+			- Maven Springboot Web Application
+			- What is Maven ?
+			- What are the Properties of Maven ?
+				- pom.xml ?
+				- maven goal ?
+			
+	- Application Development and Deployment Tools :::
+	
+Introduction to DevOps ?
+
+	- What is DevOps ?
+	- Devops Tools ?
+	GIT 
+	Jenkins 
+	Docker 
+	Ansible
+	Terraform 
+	Kubernetes
+	Prometheus
+	Grafana
+
+	- DevOps Stages ?
+		- Continuous Development
+		- Continuous Integration 
+		- Continuous Testing
+		- Continuous Delivery / Continuous Deployment 
+		- Continuous Monitoring
+
+	What is DevOps all About ???? with all these stages?
+	
+	- DevOps LifeCycle ?
+	
+	DevOps Stages ???
+	
+Java Assignments ???
+	
+	
+Next :::
+
+	Java - Assignment in progress 	
+	Build Tools - Maven	
+	Python Fundamentals
+	
+	SQL 
+	
+	GIT 
+	Jenkins 
+	
+Application Development Fundamentals :::
+
+Lets' Discuss on DevOps :
+
+Roles and Responsibilities ???
+
+As a DevOps Associate ?? 
+	Roles and Responsibilities ???
+	
+	Wat are the Skills needed for DevOps Associates ???
+	
+	10 / 10 -- should be clear ::
+		- Understand the core concept
+		- Practise that core concept 
+		- Related that core concept with real-time scenarios
+		- Continously practise as much as possible
+		
+		
+Application Development Fundamentals :::
+
+	Application :::	- set/collection of programs - Programming Languages!(java/.net/python)
+		Banking Applications
+		Retails Applications
+		Insurance Applications
+	
+	Software 	
+		- Application Software 
+			- Desktops Applications
+					Billing System 
+			- Web Applications
+					Online Banking/Gmail/Amazon
+			- Mobile Applications
+					
+			
+		- System Software
+				
+	
+	
+	Software Development Lifecycle - SDLC Methodologies ::
+	
+	
+	Billing System - Application Project :
+	
+		- Task/Functions? - 
+		- How much time to complete 
+		- How many resources needed 
+		- What are the tools needed ?
+	
+	- Requirement Analysis 
+	- Design & Document 
+	- Code 
+	- Testing 
+	- Deployed to Production
+	- Maintainence / Monitor 
+	
+	Waterfall Model :::
+			- Linear in approach 
+			- Strictly follows top-down approach
+	
+		Billing System - Application Project : 10 Functions + 1 
+
+			Billing System - Application Project : 4 Functions/Modules  
+				Stock Maintainence
+				Customer Maintainence
+				Billing 
+				Inventory 
+
+		
+			12 Months to Complete the Project.
+			
+				5th Month of SDLC 
+	Core_Project :
+		- Requirement Analysis 
+		- Design & Document 
+		- Code 						--> current phase
+		- Testing 
+		- Deployed to Production
+		- Maintainence / Monitor 
+	
+	Enhancement_Project :
+		- Requirement Analysis 
+		- Design & Document 
+		- Code 						--> current phase
+		- Testing 
+		- Deployed to Production
+		- Maintainence / Monitor 
+	
+	
+	
+	AGILE Methodologies ::
+
+			Identify the functions / Modules 
+			
+			Application is divided into various Modules 
+			
+			Billing System - Application Project : 4 Functions/Modules  - Iteration
+				Stock Maintainence
+				Customer Maintainence
+				Billing 
+				Inventory 
+				
+				Card Payment 
+				
+				
+
+	Iteration1 : Stock Maintainence
+		- Requirement Analysis 
+		- Design & Document 
+		- Code 						--> current phase
+		- Testing 
+		- Deployed to Target Environments for further testing 
+		- Maintainence / Monitor 
+
+
+	Iteration2 : Customer Maintainence
+		- Requirement Analysis 
+		- Design & Document 
+		- Code 						--> current phase
+		- Testing 
+		- Deployed to Target Environments for further testing 
+		- Maintainence / Monitor 
+
+	Iteration3 : Billing
+		- Requirement Analysis 
+		- Design & Document 
+		- Code 						--> current phase
+		- Testing 
+		- Deployed to Target Environments for further testing 
+		- Maintainence / Monitor 
+
+	Iteration4 : Inventory 
+		- Requirement Analysis 
+		- Design & Document 
+		- Code 						--> current phase
+		- Testing 
+		- Deployed to Target Environments for further testing 
+		- Maintainence / Monitor 
+
+	Iteration-nth : Card Payment
+		- Requirement Analysis 
+		- Design & Document 
+		- Code 						--> current phase
+		- Testing 
+		- Deployed to Target Environments for further testing 
+		- Maintainence / Monitor 
+		
+		
+	Application Architecture ::
+	
+		Monolith Application Architecture 
+		
+		Micro-Service Based Application Architecture
+		
+	Using AGILE, we can perform:
+	
+		Continuous Development
+		Continuous Integration
+		Continuous Testing
+		
+		Continuous Delivery	:
+			It expects the Manual approval for the production release 
+		
+	But we cannot perform :
+		
+		Continuous Deployment
+			It does not expects the Manual approval for the production release 
+		
+	
+	DevOps : ???
+	
+		- DevOps is Software Development Strategy, which helps to promote the collaboration between the teams like Development Team and Operations Team to achieve Continuous Development, Continuous Integration, Continuous Testing, Continuous Delivery, Continuous Development and Continuous Monitoring in fully Automated fashion.
+		
+	DevOps Stages ::
+	
+		Continuous Development
+		Continuous Integration
+		Continuous Testing
+		Continuous Delivery / Deployment
+		Continuous Monitoring
+		
+		
+	Teams Involved :::
+	
+		Infra-Structure Management Team 
+			
+		Application Development Team 
+		
+		Testing 
+		Release Management Team 
+		Production Support Team 
+		Production Monitoring Team 
+		Security Team 
+		
+		
+Next ::
+	
+	Continue with Application Fundamentals
+	Java Application 
+		Create Java Applications - Console Application / Web Application
+		Maven Build Tools 
+			- Create Maven Console and Web Applications
+			- Create Maven Springboot Web Applications 
+	Python
+	SQL 
+	GIT 
+	Jenkins 
+
+###############
+26th Feb. 2024 	
+###############
+
+	Continue with Application Fundamentals
+	
+	Java Application 
+		Create Java Applications - Console Application / Web Application
+		Maven Build Tools 
+			- Create Maven Console and Web Applications
+			- Create Maven Springboot Web Applications 	
+	
+	
+	Continue with Application Fundamentals on DevOps Perspective ::::	
+
+
+	Environments ::
+	
+	Non-Prod Environments																	Prod Environment
+	
+		Dev Environment - Local Machine(Laptop)
+		Testing Environment
+			QA  Quality Assurance Testing 
+				functional/integration/regression....
+			UAT	User Acceptance Testing											-->				Production Environment(Servers)
+				This testing will be done using LIVE production data.
+				business users
+				
+		Telecomm service providers ::
+		
+		Service provider1 --> Introduce a new plan to their customers
+		Outlets - 
+
+www.amazon.com ==> E_Commerce Portal		
+			
+	DevOps Stages ::
+	
+	
+	
+		Continuous Development :
+		
+			- It is a capability of Application Team to continuously develop the projects
+			- Improve productivity of Developers 
+			
+			Role of the Developers :::
+			
+				- Understand the Application Design 
+				- coding - source code development (java/python)
+				- Build  - It is a process of compiling the source code and create artifacts(Binaries - *.war / *.jar/ *.exec) 
+				- Unit Testing 
+				- Promote the changes to higher environments for further testing (QA/UAT)
+				- Notify the testing teams to pick the changes for further testing
+				
+			Using DevOps Approach 
+			
+				- Code the Application 
+				- Update the source code in the Source Code Repository like Github 
+				
+			Using DevOps Process & Tools Automate :
+			
+				- Build  - It is a process of compiling the source code and create artifacts(Binaries - *.war / *.jar/ *.exec) 
+				- Unit Testing 
+				- Promote the changes to higher environments for further testing (QA/UAT)
+				- Notify the testing teams to pick the changes for further testing	
+
+			Tools :::
+			
+				Eclipse based IDEs - Integrated Development Environment 
+				JDK , Python, .Net Core , Angular, NodeJS 
+				Build Tools : Maven, Gradle, Ant 
+				Unit Testing Tools : JUNIT, TestNG 
+				Jenkins Integration 
+		
+		Continuous Integration ::
+			- It is a capability of Application Team to continuously Integrate the code for further testing.
+		
+			Billing System - Application Project : 4 Functions/Modules  
+				Stock Maintainence			Developer1  - Code, build, unit-testing - Promote the code to QA Testing
+				Customer Maintainence		Developer2  - Code, build, unit-testing - Promote the code to QA Testing
+				Billing 
+				Inventory 
+
+			Tools :
+			
+				Eclipse based IDEs - Integrated Development Environment - Eclipse / Visual Studio Code / Visual Studio / Pycharm 
+				Jenkins 
+				Docker, Ansible 
+				
+		
+		Continuous Testing
+		
+			- It is done using Automated Testing Tools like 
+
+			Tools :
+			- JUnit / TestNG / Selenium 
+					- Create some test case/test data 				
+			- Jenkins 
+				
+				
+		Continuous Delivery / Deployment
+			- Both Continuous Delivery and Continuous Deployment are used to release the changes to Production Environments
+						
+			Continuous Delivery	:
+				It expects the Manual approval for the production release 			
+			
+			Continuous Deployment
+				It does not expects the Manual approval for the production release 	
+
+			Tools :
+			
+				Jenkins, Docker, Ansible, Kubernetes
+						
+			
+		Continuous Monitoring ==> Used to achieve Business Continuity
+		
+			Infra-Structure Monitoring 
+				Production Servers to be monitored 
+					CPU/Memory/Traffic
+					
+			Tools :
+				Prometheus / Grafana / Splunk / Nagios / Dynatace 
+	
+		www.amazon.com ==> E_Commerce Portal		
+	
+			Application Monitoring
+			
+				App-Dynamics / Datadog
+	
+	
+	
+		Infra-Structure Management :::
+		
+		Infra-Structure Management Team 
+			Provision Infra-Structure 
+				Create the Servers 
+				Configure the servers 
+				
+			Tools : 
+			
+				IAC Tools - Infra-Structure As Code :
+				
+					Terraform 		- Provisioning/Creating the Servers 
+					
+					Ansible 		- Configuration Management and deployments 
+				
+		
+			
+	Environments ::
+	
+	Non-Prod Environments																	Prod Environment
+	
+		Dev Environment - Local Machine(Laptop)
+		Testing Environment
+			QA  Quality Assurance Testing 
+				functional/integration/regression....
+			UAT	User Acceptance Testing											-->				Production Environment(Servers)
+				This testing will be done using LIVE production data.
+				business users
+			
+	Continuous Delivery / Deployment
+		- Both Continuous Delivery and Continuous Deployment are used to release the changes to Production Environments
+					
+		Continuous Delivery	:
+			It expects the Manual approval for the production release 
+			Expect the Downtime. 
+
+
+		On-Banking Services ::: Net-Banking / On Credit Card Transaction 
+		
+			Release some new feature / Fix some issues in the Production Environment 
+			
+				Fix the Production Release Window (4 - 6 Hrs.)  - Current V1.1
+				Weekends / Mid-Night / Early Mornings 
+				
+				d/t/r/s/i Teams --> give approval for production release  V1.2 
+					if the production release failed, 
+						- fix the issue with the release window.
+						- Revert the Changes
+		
+		Continuous Deployment
+			It does not expects the Manual approval for the production release 	
+			Release the products and features without any downtime
+
+		Tools :		
+			Jenkins, Docker, Ansible, Kubernetes		
+		
+		Facebook/Netflix/Google/www.amazon.com
+		
+			Very Matured level of DevOps strategies/Process to achieve Continuous Deployment.
+			
+			
+		How to Achieve Continuous Deployment :::
+		
+			Application Architecture ::
+			
+				Monolith Application Architecture 
+					- Tightly coupled applications 
+					- It has all the dependencies tightly coupled 
+					
+				Micro-Service Based Application Architecture :
+					- Loosely coupled Applications
+					- Here the Modules/Functions/Iterations are considered as micro-service.
+					- These micro-services can be independently developed, build, tested and deployed to production.
+					
+					
+		www.amazon.com - E_Commerce Portal :::
+			Web Application:
+				Function:
+		
+		Sign_up			micro-service1 - developer1 - independently code, build, unit-test, promote the changes to testing & Production Environments 
+		Sign_in			micro-service2 - developer2 - independently code, build, unit-test, promote the changes to testing & Production Environments
+		search
+		add_to_cart
+		Place_Order 
+		Payment 
+		Confirm_Order 
+		Track 
+		
+
+		- DevOps is Software Development Strategy, which helps to promote the collaboration between the teams like Development Team and Operations Team to achieve Continuous Development, Continuous Integration, Continuous Testing, Continuous Delivery, Continuous Development and Continuous Monitoring in fully Automated fashion.
+
+		
+		DevOps - All about 
+				People 
+				Process 
+				Tools 
+				
+		
+		Continuous Development :::
+		
+			On DevOps perspective we learn about Application Development, Build and Deployments process. 
+			
+			Java Application 
+				Create Java Applications - Console Application / Web Application
+				Maven Build Tools 
+					- Create Maven Console and Web Applications
+					- Create Maven Springboot Web Applications 
+			Python		
+				Create Python Applications - Console Application / Web Application
+	
+		
+		
+			Java Application 
+				Create Java Applications - Console Application / Web Application
+				
+				Tools Requirements :
+				
+					- jdk - to be installed in Developer Machine 
+					- IDE - Eclipse IDE for Java Console and Web Application Developers
+					- Tomcat Server - Is a web application server.
+						- Used to run the Web applications
+					- GIT - Maintain Source Code 
+		
+		
+	Tool: 
+		Develop --> IDE - Eclipse,GIT,JDK
+
+	Windows Machine	::
+	
+	JDK :::
+		https://jdk.java.net/java-se-ri/11
+			- select window version
+		Define Environment Variable in Windows Machine.
+
+		
+	Eclipse :::
+		https://www.eclipse.org/downloads/
+			Choose : Eclipse IDE for Enterprise Java and Web Developers  
+	
+	Tomcat :::
+		https://tomcat.apache.org/download-80.cgi		
+		
+		
+	github :
+		- Used to manage the Source Code Repositories. 		
+			https://github.com/
+			
+Next :
+	
+		Build Tools - Maven 
+				Maven Build Tools 
+					- Create Maven Console and Web Applications
+					- Create Maven Springboot Web Applications 

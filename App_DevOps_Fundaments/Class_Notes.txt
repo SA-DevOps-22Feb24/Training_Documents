@@ -653,3 +653,139 @@ Next :
 				Maven Build Tools 
 					- Create Maven Console and Web Applications
 					- Create Maven Springboot Web Applications 
+
+
+###############
+26th Feb. 2024 	
+###############
+
+		Build Tools - Maven 
+				Maven Build Tools 
+					- Create Maven Console and Web Applications
+					- Create Maven Springboot Web Applications 
+					
+		Build Tools - Maven - used to build Java applications 
+		
+		Using Maven : 
+			Application Build - Compile the code, create artifacts, perform unit-testing 
+
+				- Build  - It is a process of compiling the source code and create artifacts(Binaries - *.war / *.jar/ *.exec) 
+				- Unit Testing
+				
+		Jdk - 
+		
+		Maven 
+		
+		Eclipse IDE -- Is basically meant for Java Application Development.
+					- Create Maven Console and Web Applications
+					- Create Maven Springboot Web Applications 
+
+		Maven Project :
+		
+			pom.xml 	- Project Object Model 
+				- Will be part of the Java Application Project
+				- It is used to define the properties of application artifacts 
+				- It is used to define dependencies and the plugins required to perform build/unit-testing
+				
+			Maven Goals : Actions we perform
+				● mvn clean - to clean the target folder.
+				● mvn compile - to compile the source code
+				● mvn test - to compile and execute junit test cases
+				● mvn package - to compile, test and create artifacts
+				● mvn install - to install the package to local repository.
+				● mvn deploy - to deploy the package from local repository to remote repository.
+
+			mvn clean package 
+
+			Java Web Application Project : - 
+
+			My_Web_App - Folder 
+			
+			Maven Project Structure :::			# Java Maven Desktop/Console/terminal Application;
+
+			MVN_Poject1				# Project Name 
+				src 
+					main			# Maintain the source code *.java - Business Logic 
+						*.java
+					test			# Maintain the Test Cases and Test Data - JUnit 
+						*.java
+				target
+					artifacts *.war / *.jar
+				pom.xml 			==> defines the application artifacts, plugins and all the required depedencies
+
+				JRE_Libraries
+				MVN_Libraries	
+
+
+			Programming Languages : Java/Python/C#.Net 
+					- These are used to develop business applications 
+			
+			
+			Scripting Languages		: javascripts/python_scripts/shell_scripts/groovy Scripts/yaml_Scripts 
+					- These are used to perform process automation
+								
+		- Create Java Maven Console and Web Applications
+		
+		Pre-Requisites :
+		
+			JDK,Eclipse,tomcat to be installed in Local Machine.
+
+			Eclipse Workspace : Folder where we maintain the Projects
+			
+			Goto - File Menu - New - Maven Project
+			
+			Maven Project Archetype --> It is template to create the project.
+
+
+		Create a Maven Console Application :
+				Desktop Application :::	
+						Group_ID
+							org.apache.maven.archetype
+						Artifact_ID
+							maven-archetype-simple
+						
+		Create a Maven Web Application 				- Integrate Eclipse and Tomcat Web Application Server
+														Tomcat by default run in port 8080
+						Group_ID
+							org.apache.maven.archetype
+						Artifact_ID
+							maven-archetype-webapp	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>www.loksaieta.com</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="jumbotron" style="background-color:white">
+      <img src="https://octodex.github.com/images/spidertocat.png" alt="Spidertocat"
+           class="img-responsive center-block" style="width:250px"/>
+      <h2 class="text-center">Hello Team</h2>
+      <p class="text-center">Spring Boot Web Application </p>
+  </div>
+</body>
+</html>							
+		
+		Maven Repositories :::	Are used to maintain the Maven Dependencies and Plugins 
+		
+		https://mvnrepository.com/
+		
+			Local Repository
+			
+			Remote Repository
+			
+			
+		Java Web Application Framework :
+			Springboot - 
+			
+			Spring Intializr 
+			
+			https://start.spring.io/
+
+
+Next :
+
+		Craete a Maven Project and try Junit Testing 
+		
+		Python Fundamentals 

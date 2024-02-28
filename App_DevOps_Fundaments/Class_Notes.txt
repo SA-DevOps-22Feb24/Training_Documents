@@ -789,3 +789,125 @@ Next :
 		Craete a Maven Project and try Junit Testing 
 		
 		Python Fundamentals 
+
+
+###############
+28th Feb. 2024 	
+###############
+
+
+		Craete a Maven Project and try Junit Testing 
+		
+		
+		Unit Testing  is done by the developers
+		
+			Create Test data/Test Cases
+		
+		Payment_Module --> already 5 functions 
+		
+		 create a new function 
+		 - 1 to 10 lines of code.
+		
+		Python Fundamentals 
+		
+		
+		Dev 	-> Unit Testing 
+		
+		QA 
+		
+		UAT 
+
+
+###############
+28th Feb. 2024 	
+###############
+
+
+	Python Fundamentals :::
+	
+	Programming Language(Create Business Applications) (vs) Scripting Language(Create Process Automation) ????
+	
+	Java 
+	Python 
+	C# 
+	
+	
+	groovy
+	yaml 
+	python_scripting
+	
+	
+	Programming Language :::
+	
+		- Develop the Business Logic / Applications - Web/Desktop/Mobile
+		
+	C,C++,Java, ==> 
+	
+	Write the Application Programs ???
+	
+	Write the Scripting ???
+	
+	Requirement of the Program:
+	
+		Programming Language ???
+		
+			IT Industry is for Data !
+			
+			Handling Data!
+			
+			What is Data ?	- It is a raw fact - without any meaning!
+			
+			What is Information ? - It is a processed Data.
+			
+			INDIA ?? --> Data
+			
+			INDIA is a Country ?? --> Information 
+			
+		Programming Language ::		Logic!
+		
+			- Variables?
+			- Data type - numberic/string/.....
+			- int a = 5;		# a=5
+			- int stud_Ids = [1,2,3,4,5,6]		- using array - index starts from zero = "HEllo"
+			- Conditional Statements - if, switch case 
+			- Loops - for loop, while, do-while 
+			- Handle the String, List
+			- file system - File Handling - create/write/update/delete  = Sequential
+			- Database - MySQL/ORACLE
+			- Remote Server handling
+			
+			
+		Logical Thinking! - 
+		
+			Install Python in windows Machine!
+				Python IDLE -> Command line utility - CLI
+				https://www.python.org/downloads/
+
+			Install Visual Studio Code 
+				https://code.visualstudio.com/download
+				
+				
+		Write Python programs - Console and Web Application Programs :::
+		
+		Logical Thinking! - 
+		
+			How to create the Application Logic ?
+			
+			SDLC 
+				Requirement Analysis 
+				Design 	- Algorithms  - Written in high level language - It is step-by-step process to execute a task
+						- Flow Charts
+				Code 
+				
+		Algorithms to calculate sum of two numbers ?
+		
+		int a = 8
+		int b = 5
+		
+		int c = a + b 
+		
+		print c 
+		
+		a = 10998989898989898989890 
+		b = 9.2
+		c= ?

@@ -911,3 +911,135 @@ Next :
 		a = 10998989898989898989890 
 		b = 9.2
 		c= ?
+
+###############
+29th Feb. 2024 	
+###############
+
+
+		Python :
+			IDEs - PyCharm 
+			Visual Studio Code - IDEs - Open Source 
+			
+			Visual Studio 	- IDE 		.Net Framework
+			
+			echo "Hello" 		# Linux Shell 
+			a=5
+			
+			print("Hello")		# Python 
+			a = 5
+			
+			python --version 
+			python .\pypgm1.py
+			
+		
+			String ::
+				mystr = "Hello Team"
+			
+			List ::									# Can be re-writable
+			
+				mylist1 = [1,"asdf", "afsdfas"]
+				
+			Tuple ::								# Read Only List
+				mytuple1 = (1,"asdf", "afsdfas")
+			
+			Dictionary ::							# Based on key:value pairs
+			
+				myjsonDS1 = {1:"sam",2:"Tom"}
+			
+			Add the Products to Cart : 
+			
+				List of Items : ['Mobile','Laptop','Watch']
+				
+			Online Banking Transation:
+			
+				Tuple Sequence is used for this!
+			
+			Handling the Json/Yaml files which are based on key:value pair
+			
+				{
+					Student_Name 	: "asdfasd"
+					Student_ID 		: "1001"
+					Student_Dept	: "IT"
+				}
+	
+	
+			Create Web Applications using Python :::
+			
+				Tomcat - Web Application Server 
+	
+	
+			In Python : 
+			
+				Flask 	- Web Application Server 
+				Django 
+	
+				Python Web Application :::
+				
+					- Web Application Framework 
+					
+							Django
+							Flask 
+	
+				Flask Web Application Framework to craete python web application :
+				
+					1. Visual Studio Code 
+					2. Create a Project Folder
+					3. app.py 		# Import Flask in app.py
+					4. Create templates folder 
+							sample.html 
+							
+					5. Open Terminal from VS Code 
+					6. pip install Flask
+					6. set FLASK_APP=sample
+					7. python -m flask run
+					
+						localhost:5000
+						
+						http://127.0.0.1:5000
+
+
+
+#app.py
+				
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+
+def sample():
+	return render_template("sample.html")
+
+if "__name__" == "__main__":
+	app.run(debug=True)	
+
+
+
+#sample.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>www.loksaieta.com</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="jumbotron" style="background-color:white">
+      <img src="https://octodex.github.com/images/spidertocat.png" alt="Spidertocat"
+           class="img-responsive center-block" style="width:250px"/>
+      <h2 class="text-center">Hello Team</h2>
+      <p class="text-center">SA-Python Web App Demo </p>
+  </div>
+</body>
+</html>	
+
+
+Next ::
+	Fundamentals of SQL :::
+		
+	GIT 
+
+	Jenkins 
+	

@@ -1042,4 +1042,289 @@ Next ::
 	GIT 
 
 	Jenkins 
+
+
+###############
+4th Mar. 2024 	
+###############
+		
+	Fundamentals of SQL :::
 	
+	SQL : ---> Structured Query Language!
+	
+	What is Data ? 
+	
+		Is a raw fact.
+	
+	INDIA 
+	
+	Information :
+	
+		Processed Data 
+	
+	INDIA is a Country 
+	
+
+	To store a raw text, What we use ?
+	
+		Memory/Volume/Address space :
+		
+		Variable Is an identifier of the data item stored in a memory location.
+		
+		country = "India"
+		
+		File:
+		
+		country.txt 
+		
+			INDIA is a Country
+			
+			INDIA 
+		
+		File System -> Is sequential form.
+			It is used for Batch Process. Bulk Data Transfer/Load.
+			
+			json / yaml / xml 
+			
+		Transaction Data ::::
+			
+				Random mode of data transfer using the key field.
+				
+				
+		Database Management System :
+
+			System that helps to manage the data in the from of Tables 
+			
+			
+		Database : It is a collection of Tables 
+		
+		Tables   : It is a Rows and Columns 
+		
+		Table Students_Info:
+
+		Stud_Adm_no		Stud_Name		Contact_Number		Email_Id			Course_Name
+		
+		1001			zzzzzz			1231231231			asdfa@asd.com		DevOps 
+		1002			cccccc			123123123			asw@asd.com			ML
+		ddddddddd		1003
+		
+		
+		Relational Database Management System 
+		
+			MySQL Database Server 
+			Oracle 
+			
+		RDBMS uses SQL - Structured Query Language to create and Manage the Database and its components
+		
+		Application Architecture :::
+		
+		3-tier Application Architecture 
+		
+			Web_site : User_Registration
+		
+			Front_End Design Layer		# Helps the End-Users to access the Application in GUI(Grapical User Interface) Mode 
+			
+			Application Layer			# Used to Create the Application Logic and Validations 
+			
+			Back_End(DataBase) Layer	# Used to Store/manage/retrieve the Data in Database
+			
+			
+		2-tier Application Architecture
+		
+			Front_End
+			
+			Application Layer 
+		
+		1-tier Application Architecture
+		
+			Blog sites / articles - Static web page 
+		
+		In Applications
+			
+			SQL is used in the Application Layer to interact with Database.
+		
+
+		SQL Installation ::
+		
+		Install SQL Server 
+		
+				https://www.microsoft.com/en-in/sql-server/sql-server-downloads
+				
+				https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16&redirectedfrom=MSDN
+
+		Table Students_Info:
+
+		Stud_Adm_no		Stud_Name		Contact_Number		Email_Id			Course_Name
+		
+		1001			zzzzzz			1231231231			asdfa@asd.com		DevOps 
+		1002			cccccc			123123123			asw@asd.com			ML
+				
+		
+		SQL Queries:
+		
+			DDL --> Data Definition Language 
+					Create,Alter,truncate,drop 
+					truncate - used to delete all the records from the table
+					drop	 - used to delete all the records along with the table 
+			DML --> Data Management Language
+					Insert 
+					update
+					delete	- used to delete the specific record(s) from the table
+					select 
+				
+			TCL --> Transaction Control Language
+					
+			DCL --> Data Control Language
+						Grant, Revoke 
+		
+		Table :
+		
+		drop table Emp_Details;
+		
+		alter table Emp_Details add Address char(20);
+		
+		create table Emp_Details(Emp_no char(6),Emp_Name char(20));
+		
+		insert into Emp_Details(Emp_no, Emp_Name) values ('1001',"asdfasdf");
+		
+		Emp_Details ::
+		
+		Emp_No		Emp_Name		Emp_Department		Contact_Number		EMail_ID				DOB					DOJ
+		
+		1001		asdf			It					123123123			asdf@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		1002		asdfw			It					123133123			asdfw@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		1003		asdfd			It					123123123			asdfd@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		1004		asdff			It					123113123			asdff@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		
+		//update table Emp_Details set Emp_Department = "CSE";
+		
+		
+		update table Emp_Details set Emp_Department = "CSE" where Emp_No = '1001';
+		
+		Emp_Details ::
+		
+		Emp_No		Emp_Name		Emp_Department		Contact_Number		EMail_ID				DOB					DOJ
+		
+		1001		asdf			CSE					123123123			asdf@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		1002		asdfw			It					123133123			asdfw@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		1003		asdfd			It					123123123			asdfd@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		1004		asdff			It					123113123			asdff@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		
+		delete from Emp_Details where Emp_No = "1004";
+		
+		Emp_Details ::
+		
+		Emp_No		Emp_Name		Emp_Department		Contact_Number		EMail_ID				DOB					DOJ
+		
+		1001		asdf			CSE					123123123			asdf@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		1002		asdfw			It					123133123			asdfw@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		1003		asdfd			It					123123123			asdfd@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		
+		
+		Select Query :::
+		
+		select * from Emp_Details;
+
+		Emp_No		Emp_Name		Emp_Department		Contact_Number		EMail_ID				DOB					DOJ
+		
+		1001		asdf			CSE					123123123			asdf@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		1002		asdfw			It					123133123			asdfw@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		1003		asdfd			It					123123123			asdfd@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+
+
+		select * from Emp_Details where Emp_Department = "IT";
+		
+		Records: 2 
+		1002		asdfw			It					123133123			asdfw@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		1003		asdfd			It					123123123			asdfd@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		
+		
+		select * from Emp_Details where Emp_No = "1003";
+
+		1003		asdfd			It					123123123			asdfd@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		
+		
+		Where Clause - used to set some conditions and filter the tabel entries :
+		
+		= , <, >, =! <=, >= 				===> Conditional Operators 
+		
+		and or not 							===> Logical Operators 
+		
+		Emp_No		Emp_Name		Emp_Department		Contact_Number		EMail_ID				DOB					DOJ				Location 
+		
+		1001		asdf			CSE					123123123			asdf@cbs.com			dd/mm//yyyy			dd/mm/yyyy		Pune
+		1002		asdfw			It					123133123			asdfw@cbs.com			dd/mm//yyyy			dd/mm/yyyy		Pune
+		1003		asdfd			It					123123123			asdfd@cbs.com			dd/mm//yyyy			dd/mm/yyyy		Pune
+		
+		select * from Emp_Details where Emp_Department = "IT" and Location = "Pune";
+		
+		1002		asdfw			It					123133123			asdfw@cbs.com			dd/mm//yyyy			dd/mm/yyyy		Pune
+		1003		asdfd			It					123123123			asdfd@cbs.com			dd/mm//yyyy			dd/mm/yyyy		Pune
+		
+		select * from Emp_Details where Emp_Department = "CSE" and Location = "Pune";
+		
+		1001		asdf			CSE					123123123			asdf@cbs.com			dd/mm//yyyy			dd/mm/yyyy		Pune
+		1002		asdfw			CSE										asdf@cbs.com			dd/mm//yyyy			dd/mm/yyyy		Pune
+		
+		
+		
+		Query Optimization:
+		
+		Constraints / Conditions :::		Are used to maintain the Integrity of the Database Tables.
+			Referential Integrity Constraint 
+					Before Insert/update/ check the parent table.
+					Before Delete check the entries in child table. 
+
+			Unique Constraint
+			Non-Null 
+			Primary Key			(Unique & Non-Null)
+			Check Constraint
+			
+		
+		Conditions :::
+
+		Emp_Details ::			Primary_Table/Parent Table 
+		
+		Emp_No		Emp_Name		Emp_Department		Contact_Number		EMail_ID				DOB					DOJ				Location 
+		
+		1001		asdf			CSE					123123123			asdf@cbs.com			01/01/1900			01/01/2024		Pune
+		1002		asdfw			It					123133123			asdfw@cbs.com			01/12/1900			01/01/2024		Pune
+		1003		asdfd			It					123123123			asdfd@cbs.com			dd/mm//yyyy			dd/mm/yyyy		Pune
+		1004		asdfq			It					<null_value>		asdfq@cbs.com			dd/mm//yyyy			dd/mm/yyyy		Pune
+		
+		Emp_Salary_Details :
+		
+		Emp_No		basic_pay	
+		
+		1001		>10000
+		
+		
+		Emp_Project_Details :::		Child Table 
+		
+		Emp_no		Project_ID		Project_Name		Location			Manager 				Client_Name
+		1002		P1001			Proj_name1			Chennai				aaaaaa					zzzzzz		
+		
+		
+		Emp_Salary_Details ::: Child Table 
+		
+		Emp_no		Basic_pay		HRA			DA				Gross_Payment		Net_Pay
+
+		1001		1231231			1231		21312			12312				zzzzzzzzz
+		
+
+		
+		Select Statements :::
+		
+		https://www.sqlzoo.net/wiki/SQL_Tutorial
+		
+Next :::
+
+			Version Control System using GIT : 
+		
+			Jenkins 
+				shell commands 
+				groovy scripts 
+								
+		
+		DevOps Engineers : Scripting Languages - Linux-Shell, groovy, yaml and python 
+		

@@ -1,0 +1,204 @@
+###############
+5th Mar. 2024 	
+###############		
+		
+		
+		Version Control System Using GIT
+		
+		Jenkins 
+		
+		Linux ! 
+		
+		AWS ????
+		
+		AWS DevOps Services :
+		
+		Build Tools :
+		Maven - 
+		
+		Open Source DevOps Tools :
+		
+		GIT CLI / GITHUB 
+		Jenkins 
+		Docker 
+		Kubernetes
+		Ansible
+		Terraform 
+		
+		Continuous Development :::
+		
+		
+		Version Control System Using GIT :::
+		
+		A Developer
+		
+		Create a index.html 
+		
+		<html> 
+		--
+		--
+		--
+		--
+		--
+		--
+		--
+		--
+		</html> 
+		
+		save as index.html 
+		
+		Testing access the page .
+		
+		<html>
+		--
+		--
+		--
+		--
+		--adfasdfsdf
+		--asdfasdf
+		--
+		</html> 	
+		
+		save index.html
+		
+		
+		<html>
+		--
+		--
+		--asdfasdf
+		--asdf
+		--adfasdfsdf
+		--asdfasdf
+		--
+		</html> 	
+		
+		save index.html		
+		
+		Version Control System :::
+		
+		
+			index.html_V1.0		(Tag/Verion_Number/Commit_ID)
+			index.html_V1.1
+			index.html_V1.2
+			index.html_V1.3
+			index.html_V1.4
+			index.html_V1.5
+			
+		Developers they use Version Control System to save theire changes.
+		
+		
+		Version Control System :::
+		
+			- It is used to Version Control the Source Code Changes 
+			- It is used to track the changes 
+			
+		Types of Version Control System :::
+		
+			Local VCS 				# It is used to version the changes in the local machine - for single user.
+			
+			Centralized VCS 		# It is used to maintain the source code in a central server 
+									# Users should always be online to working with Centralized VCS 
+									# If the Centralized Server is Down, Users cannot access the Repositories.
+			
+			Distributed VCS 		# It is used to maintain the source code in a Remote servers
+									# Allows users to work in offline mode 
+									# The Copies of Repositories are maintained in multiple servers, All Users will have their local copy of the repository.
+									
+									
+			GIT :::
+			
+				- GIT is one of the Open-Source Distributed Version Control System 
+				- It is used to Version Control the Source Code Changes 
+				- It is used to Track the Changes 
+				- It is used to perform Parallel Development using Branching Techniques.
+				
+			Repository --> 	It is collection of Folders and files 
+							Developers maintain the Source Code Project Folders and Files
+			
+			Terminologies :::
+			
+			
+			Git CLI		--> To be installed in the Local Machine 
+			
+			Remote Servers :
+			Github 		--> Remote git Repository 
+			gitlab
+			bitbucket 
+			Azure Repo 
+			AWS CodeCommit 
+			
+			
+			Install GIT Client in the Local Machine 
+			
+			
+			Working with GIT ::::
+			
+			Git File Workflow ::: 60% of GIT 
+			
+			Distributed VCS :::
+			
+			Local Machine																			<---->				Remote Server
+			(Install Git Client)
+			
+			Working Directory 		--->	Staging Area 	---> 	Local Repository 					---->				Remote Repository
+			
+			index.html 				add 	index.html		commit 			index.html_V1.0				push 					index.html_V1.0
+			index.html				add 	index.html		commit			index.html_V1.1                                     index.html_V1.1
+			index.html				add 	index.html		commit			index.html_V1.2                                     index.html_V1.2
+			index.html				add 	index.html		commit			index.html_V1.3                                     index.html_V1.3
+			index.html				add 	index.html		commit			index.html_V1.4                                     index.html_V1.4
+			index.html				add 	index.html		commit			index.html_V1.5                                     index.html_V1.5
+			
+			
+			
+			
+			Developers' Workload :::
+
+			- Enhancement Project / Bug fixing 		# Remote Repository already exist
+			
+			- New Project 							# Remote Repository Might not be present at initial stage of the project.
+			
+			
+			git commands :::
+			
+			git clone 				==>		Is used to Clone/copy the entire remote repository to the local Machine
+
+			git add 				==>		Is used to add the changes from working directory to staging area.				
+			
+			git commit 				==> 	Is used to commit the changes from staging area to local repository.
+			
+			git push 				==> 	Is used to push the changes from Local Repository to Remote Repository
+			
+			git fetch / git pull 	:::
+							
+							- Both Git Fetch and Git Pull are used to handle the incremental Changes from Remote to Local Repository.
+							
+							- git fetch --> Is just used to check for the incremental changes. If there are any changes exist in the remote repository, it will update the changes in the local repository. NOT is the Working Directory.
+							
+							- git pull --> Is used to check for the incremental changes and if there are any changes exist in the remote repository, it will update the changes in the local repository as well as in the Working Directory.	
+
+								git pull ==> git fetch and git merge
+			
+			
+			
+			fork 					==>		Is used to Copy one Remote Repository to Another Remote Repository
+			
+			
+			Install GIT Client in the Local Machine ::::
+			
+			https://git-scm.com/downloads
+			
+			Install git client in Windows Machine :::
+			
+				- git bash 			# Uses the Linux prompt to work with git cli commands.
+				- git cmd
+				- git gui 
+			
+			
+Summary ::
+
+			Install GIT in the Local Machine 
+			
+			Go thru the class recordings and class notes before you join the next session!
+			
+	

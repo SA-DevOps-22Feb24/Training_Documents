@@ -202,3 +202,451 @@ Summary ::
 			Go thru the class recordings and class notes before you join the next session!
 			
 	
+
+###############
+6th Mar. 2024 	
+###############		
+
+		Working with GIT :::
+		
+		Git Cli Commands :::
+		
+		
+		Open git bash in windows machine 
+		
+		Folder Structure :::
+		
+		Project Folder 		--> Workspace - working directory 
+			file1
+			file2
+			file3
+		
+		
+			Distributed VCS :::
+			
+			Local Machine																			<---->				Remote Server
+			(Install Git Client)
+			
+			Working Directory 		--->	Staging Area 	---> 	Local Repository 					---->				Remote Repository
+			index.html 				add 	index.html		commit 			index.html_V1.0				push 					index.html_V1.0	
+
+		Open Git bash 
+
+		cd d:
+		
+		mkdir SA-Feb24-Projects 
+		
+		cd SA-Feb24-Projects 
+		
+		mkdir project1 
+		mkdir project2	==> Local Repository.
+		
+		
+		Initialize local git repository
+		
+		git init 				# 	Is used to initialize a repository, 
+									It creates a default branch called master.
+									It Creates GIT Directory.(Used by git to manage the versioning)
+									
+									Branch is the logical copy of Repo.
+		
+		
+		echo "rec1" >> file1.txt
+		
+		git status				# Used to find the current status of repository
+		
+		git add file1.txt 		
+		
+		git commit -m "Created file1.txt"
+		
+		git log					# Is used to get the list of commit in the repository 
+		
+		HEAD 					# 	Is a git pointer used to refer latest commit of the current branch.
+									It is Maintained by git.
+									
+		
+		git global / local Configuration :::			# Should be done before the initial commit.
+				
+		GIT Global Configuration 	-- # Is applicable for the repositories 
+		
+			git config --global user.name "Loksai"
+			
+			git config --global user.email "loksai@asf.com"
+		
+		GIT Local Configuration 	-- # Is applicable for a specific repository  
+		
+			git config user.name "Loksai"
+			
+			git config user.email "loksai@asf.com"
+			
+			
+		Repository :::
+		
+		As per process :::
+		
+		git init 
+		
+		
+		echo "rec1" >> file1.txt 
+		
+		git add file1.txt 
+
+			git config --global user.name "Loksai"
+			
+			git config --global user.email "loksai@asf.com"		
+			
+		git commit -m "Created file1.txt"
+		
+		
+		git add :
+		
+			git add <file_name>
+			
+			git add <file_name1> <file_name2>
+			
+			git add *.doc 
+			
+			git add .							# Add all the files to staging area.
+		
+		
+		
+		Un-Stage the files Changes.
+		
+		
+			git rm --cached file1.txt			# It will remove the change from staging Area 
+												# Changes will be back to Working Directory 
+												
+			git rm -f file1.doc 				
+												# It will remove the file from staging Area as well as from the working Directory.  											
+		
+			
+		git log :								# Is used to get the list of commit in the repository
+		
+			git log --oneline 
+			
+			git log -2 
+			
+			git log --stat -2
+			
+			git log --oneline -2
+		
+		
+		git show <commit_id>
+		
+		Undo Actions :::
+		
+			git reset 
+		
+			git revert 
+		
+		
+				Both git reset and revert are used to undo the changes :
+				
+		
+		git reset :::
+		
+			Syntax :
+			
+				git reset <commit_id> <reset_Option>
+				
+				reset Options : 
+				
+					It used to Undo the Changes.
+					It will update the Commit History 
+					It will not create any new commit point to track the changes.
+					As a best practice it is NOT recommended to use git reset HARD Option in the shared repository.
+				
+				git reset --soft :
+				
+					It is used to take the changes from local repository back to staging area.
+					The Changes will be available in both staging area and working directory.
+					Head pointer will be reset to the specific commit.
+				
+				
+				git reset --mixed : # Default
+					It is used to take the changes from local repository back to working Directory.
+					The Changes will be available in the working directory. i.e., the changes will be removed from local repo. and staging area. 
+					Head pointer will be reset to the specific commit.
+				
+				git reset --hard :
+				
+					This is the permanent deletion.
+					The Changes will be permanently removed from local repository, staging area as well as from the working directory.
+					Head pointer will be reset to the specific commit.
+					
+		
+		git reset <commit_id>
+			
+			
+		git ls-files	# is used to get the list of files that are being tracked by git. 
+						# The staged / committed entires.
+		
+
+Summary :
+
+		Install Git 
+		
+		Work with Git Misc. Command in Local Repo. 
+		
+		
+		
+Next ::		
+		git revert --> 	It is an alternative to git reset --hard
+						It can be used in the shared repository.
+		
+		branch Techinques
+		
+		git rebase, squash, stash 
+		
+		git ignore, 
+		
+		git remote repos..
+
+501  cd d:
+  502  pwd
+  503  mkdir SA-Feb22-DevOps
+  504  cd SA-Feb22-DevOps/
+  505  mkdir Project1
+  506  cd Project1/
+  507  clear
+  508  pwd
+  509  ls
+  510  ls -a
+  511  clear
+  512  pwd
+  513  clear
+  514  git init
+  515  ls
+  516  ls -a
+  517  cd .git/
+  518  ls
+  519  cd ..
+  520  ls
+  521  clear
+  522  ls
+  523  ls -a
+  524  clear
+  525  echo "HEllo"
+  526  echo "Record1" >> file1.txt
+  527  ls
+  528  cd ..
+  529  ls
+  530  mkdir Project2
+  531  ls
+  532  cd Project2/
+  533  clear
+  534  pwd
+  535  ls -a
+  536  clear
+  537  git init
+  538  ls -a
+  539  clear
+  540  git status
+  541  ls
+  542  echo "Record1" >> file1.txt
+  543  git status
+  544  git add file1.txt
+  545  git status
+  546  git commit -m "Created file1.txt"
+  547  git status
+  548  git log
+  549  clear
+  550  ls
+  551  git status
+  552  echo "rec1" >> file2.txt
+  553  git status
+  554  git add file2.txt
+  555  git status
+  556  git commit -m "Created file2.txt"
+  557  git log
+  558  cat file2.txt
+  559  clear
+  560  git log
+  561  git config user.name "Loksai"
+  562  echo "rec1" >> file3.txt
+  563  git add file3.txt
+  564  git commit -m "created file3.txt"
+  565  git log
+  566  cd ..
+  567  mkdir Project3
+  568  cd Project3
+  569  git init
+  570  echo "rec1" >> file1.txt
+  571  git add file1.txt
+  572  git commit -m "Created file1.txt"
+  573  git log
+  574  git config --global user.name "Loksai-ETA"
+  575  echo "rec1" >> f2.txt
+  576  git add f2.txt
+  577  git commit -m "Created f2.txt"
+  578  git log
+  579  ls
+  580  cd .git/
+  581  ls
+  582  cd ..
+  583  clear
+  584  ls
+  585  ckear
+  586  clear
+  587  git status
+  588  clear
+  589  ls
+  590  cd ..
+  591  ls
+  592  mkdir sampledir1
+  593  cd sampledir1/
+  594  pwd
+  595  ckear
+  596  clear
+  597  pwd
+  598  git init
+  599  git status
+  600  echo "rec1" >> f1.txt
+  601  git status
+  602  git add f1.txt
+  603  git status
+  604  git commit -m "Created f1.txt"
+  605  clear
+  606  git log
+  607  ls
+  608  git status
+  609  clear
+  610  echo "rec1" >> index.html
+  611  ls
+  612  git status
+  613  echo "rec1" >> about.html
+  614  ls
+  615  echo "rec1" >> s1.java
+  616  echo "rec1" >> s2.java
+  617  echo "rec1" >> s3.java
+  618  echo "rec1" >> a1.txt
+  619  echo "rec1" >> a2.txt
+  620  ls
+  621  echo "rec1" >> w1.doc
+  622  echo "rec1" >> w2.doc
+  623  clear
+  624  ls
+  625  git status
+  626  git add a1.txt
+  627  git status
+  628  git add a2.txt about.html
+  629  git status
+  630  git add *.doc
+  631  git status
+  632  git add .
+  633  git status
+  634  git rm --cached a1.txt
+  635  git status
+  636  git rm --cached *.doc
+  637  git status
+  638  git add .
+  639  git status
+  640  git rm -f a1.txt
+  641  ls
+  642  git status
+  643  clear
+  644  git log
+  645  git status
+  646  git commit -m "Created sample files"
+  647  git log
+  648  echo "rec1" >> l1.txt
+  649  git add .
+  650  git commit -m "Created l1.txt"
+  651  ehco "rec1" >> l2.txt
+  652  git add .
+  653  git commit -m "created l2.txt"
+  654  echo "rec1" >> l3.doc
+  655  git add .
+  656  git commit -m "Created l3.doc"
+  657  clear
+  658  git log
+  659  git log
+  660  git log --oneline
+  661  git log --oneline -2
+  662  git log --oneline -3
+  663  git log --oneline -4
+  664  git log -2
+  665  git log --stat -2
+  666  clear
+  667  git log --stat -1
+  668  git log -1
+  669  clear
+  670  git log --oneline
+  671  git show c3af605
+  672  git show 3d27853
+  673  ls -a
+  674  clear
+  675  git log --oneline
+  676  git log --oneline -2
+  677  git log --stat
+  678  git log --stat -2
+  679  clear
+  680  git log --oneline
+  681  git show 2ee5193
+  682  clear
+  683  cd ..
+  684  mkdir sampledir2
+  685  cd sampledir2
+  686  clear
+  687  git init
+  688  echo "rec1" >> s1.txt
+  689  git add .
+  690  git commit -m "CM1"
+  691  echo "rec1" >> s2.txt
+  692  git add .
+  693  git commit -m "CM2"
+  694  echo "rec1" >> s3.txt
+  695  git add .
+  696* git commit -m "CM"
+  697  echo "rec1" >> s4.txt
+  698  git add .
+  699  git commit -m "CM4"
+  700  echo "rec1" >> s5.txt
+  701  git add .
+  702  git commit -m "CM5"
+  703  clear
+  704  git log --oneline
+  705  ls
+  706  ls
+  707  git ls-files
+  708  clear
+  709  ls
+  710  git ls-files
+  711  git status
+  712  git log --oneline
+  713  git reset --soft c54a662
+  714  git status
+  715  ls
+  716  git ls-files
+  717  git log --oneline
+  718  git status
+  719  git commit -m "CM5.1"
+  720  clear
+  721  git status
+  722  git log --oneline
+  723  ls
+  724  git ls-files
+  725  git reset --mixed c54a662
+  726  git status
+  727  ls
+  728  git ls-files
+  729  git add .
+  730  git commit -m "CM5.2"
+  731  clear
+  732  git status
+  733  ls
+  734  git ls-files
+  735  git log --oneline
+  736  git reset --hard c54a662
+  737  git status
+  738  git ls-files
+  739  ls
+  740  git log --oneline
+  741  git reset --hard 99227d2
+  742  ls
+  743  git ls-files
+  744  git log --oneline
+  745  clear
+  746  git log --oneline
+  747  ls
+  748  history

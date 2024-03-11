@@ -1125,3 +1125,426 @@ Next :
 			git ignore, 
 			
 			git remote repos..		
+
+
+###############
+11th Mar. 2024 	
+###############	
+				
+			Merging multiple branches 
+			
+			Handling Merge Conflicts 
+		
+			git rebase, squash, stash 
+			
+			git remote repos..				
+				
+			Jenkins
+			
+			
+			
+			- Merging multiple branches 
+				
+				master --> cm1		file1.txt 
+										record1
+											
+									file1.txt 					# Upon merge from feature1 
+										record1
+										record2 from feature1										
+										
+				
+					feature1 --> cm1
+									file1.txt 
+										record1
+										record2 from feature1 
+					
+					git switch master 
+					
+					git merge feature1
+					
+					
+					feature2 --> cm1
+									file1.txt 
+							        	record1
+										record2 from feature2
+
+										
+				
+			
+			- Handling Merge Conflicts 		
+										
+				Merge Conflict :::
+
+					Why the Merge Conflict Occurs ?
+						When we try to merge the from more than one feature branch or user into the same file and at the same record, we get merge conflict.
+					
+					How to fix the Merge Conflict ?
+					
+						- Identify the file(s) causing the issue in target branch.
+						- Open the file and review the file content.
+						- Decide which record has to be retained/deleted.
+						- Remove the header and footer, Update the file content
+						- add the changes and commit the changes in target branch.
+1.----------
+2.----------			
+		
+		User1: 2. **********
+		USer2: 2. $$$$$$$$$$
+		
+		
+			In DevOps era, we should always prevent the merge conflict!
+			
+			Using DevOps - Implement shift-left approach 
+			
+		
+
+	GIT Rebase ::::
+		
+		Repo1: 
+		
+			master --> 	cm1
+						cm1,f1cm1			# Upon merge from feature1 	
+						
+						cm1,f2cm1,f1cm1 	# Upon merge from feature2 without rebase 
+						
+						cm1,f1cm1,f2cm1		# Upon merge from feature2 with rebase
+		
+				feature1 --> 	cm1 
+								cm1,f1cm1 
+								
+							git switch master 
+							
+							git merge feature1 
+				
+				
+				feature2 --> cm1 
+								cm1,f2cm1 
+							
+							git rebase master 		# Should be executed in the current branch.
+							
+								cm1,f1cm1,f2cm1 
+								
+								
+							git switch master 		# Should be executed in the current branch.
+							
+							git merge feature2 		# Should be executed in the target branch.		
+		
+		
+		
+		
+				- It is used to maintain the linear commit history 
+				- It is used to prevent the merge conflict in the target branch 
+				- As as a best practise, it is always recommended to use rebase before merge.
+						- Because, rebase will help to keep the current branch in sync with target branch. 
+			
+		
+		Delete Branch from repository :
+		
+			git branch -D feaure1			
+			
+		Rename Branch :
+		
+			git branch -M feature2_branch
+			
+			
+			
+			
+		GIT SQUASH :	
+			
+			- It is a merge Option used to combine more that one commit and create a new commit point.
+			
+			
+		Repo1: 
+		
+			master : cm1 
+			
+					 cm1,f1cm1,2,3,4,5,6,7,8,...........,100			# Upon merge from feature1
+					 
+					 cm1,f1changes
+			
+				feature1 : cm1,f1cm1,2,3,4,5,6,7,8,...........,100
+				
+					git merge feature1 
+			
+					git merge --squash feature1
+					
+						==> Commit Message ?
+									"f1changes" 
+									
+			
+		Scenario 4 :				
+			Project_Repo1
+				master 	- cm1,cm2,cm3,
+						- cm1,cm2,cm3,cm4						# cm4 is - Upon merging from Release Branch
+				
+					Release_Branch - cm1,cm2,cm3,Team1_Changes,Team2_Changes 
+				
+						Intregration_Branch1 	- cm1,cm2,cm3 														# Team1
+										cm1,cm2,cm3,Developer1_Branch_Changes,Developer2_Branch_Changes  # Upon merging from Dev1 & Dev2 Branches
+					
+							Developer1_Branch :	- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2,f2cm1,f2cm2			# Upon Merging from feature1 and feature2
+												
+								feature1 		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2
+								feature2		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f2cm1,f2cm2
+							
+				
+							Developer2_Branch :	- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2,f2cm1,f2cm2			# Upon Merging from feature1 and feature2
+												
+								feature1 		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2
+								feature2		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f2cm1,f2cm2
+							
+				
+						Intregration_Branch2 	- cm1,cm2,cm3 														# Team2
+										cm1,cm2,cm3,Developer1_Branch_Changes,Developer2_Branch_Changes  # Upon merging from Dev1 & Dev2 Branches
+					
+							Developer1_Branch :	- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2,f2cm1,f2cm2			# Upon Merging from feature1 and feature2
+												
+								feature1 		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2
+								feature2		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f2cm1,f2cm2
+							
+				
+							Developer2_Branch :	- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2,f2cm1,f2cm2			# Upon Merging from feature1 and feature2
+												
+								feature1 		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2
+								feature2		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f2cm1,f2cm2
+										
+			
+  502  cd d:
+  503  cd SA-Feb22-DevOps/
+  504  clear
+  505  ls
+  506  clear
+  507  mkdir demorepo1
+  508  cd demorepo1/
+  509  clear
+  510  git init
+  511  echo "record1" >> file1.txt
+  512  git add .
+  513  git commit -m "cm1"
+  514  clear
+  515  git log
+  516  ls
+  517  git staus
+  518  status
+  519  clear
+  520  git status
+  521  git branch
+  522  git branch feature1
+  523  git branch feature2
+  524  clear
+  525  git branch
+  526  git status
+  527  git log --oneline
+  528  git switch feature1
+  529  ls
+  530  cat file1.txt
+  531  echo "record2 from feature1_Branch" >> file1.txt
+  532  cat file1.txt
+  533  git status
+  534  git add .
+  535  git commit -m "f1cm1"
+  536  git status
+  537  git switch master
+  538  cat file1.txt
+  539  git switch feature2
+  540  cat file1.txt
+  541  git status
+  542  git log --oneline
+  543  cat file1.txt
+  544  lear
+  545  clear
+  546  ls
+  547  cat file1.txt
+  548  echo "record2 from feature2_Branch" >> file1.txt
+  549  git add .
+  550  git commit -m "f2cm1"
+  551  clear
+  552  git log --oneline
+  553  git switch master
+  554  clear
+  555  git log --oneline
+  556  ls
+  557  git merge feature1
+  558  git log --oneline
+  559  cat file1.txt
+  560  clear
+  561  cat file1.txt
+  562  git merge feature2
+  563  clear
+  564  git status
+  565  vi file1.txt
+  566  git add .
+  567  git commit -m "Conflict Resolved"
+  568  cat file1.txt
+  569  git log --oneline
+  570  clear
+  571  cat file1.txt
+  572  cd ..
+  573  mkdir demorepo2
+  574  cd demorepo2/
+  575  git init
+  576  clear
+  577  echo "rec1" >> s1.txt
+  578  git add .
+  579  git commit -m "cm1"
+  580  git branch feature1
+  581  git branch feature2
+  582  clear
+  583  git branch
+  584  git log --oneline
+  585  cat s1.txt
+  586  git switch feature1
+  587  cat
+  588  cat s1.txt
+  589  echo "record from feature1" >> s1.txt
+  590  git add .
+  591  git commit -m "f1cm1"
+  592  cat s1.txt
+  593  git log --oneline
+  594  git switch master
+  595  git merge feature1
+  596  git log --oneline
+  597  cat s1.txt
+  598  git switch feature2
+  599  ls
+  600  git log --oneline
+  601  echo "record from feature2" >> s1.txt
+  602  git add .
+  603  git commit -m "f2cm1"
+  604  git status
+  605  git log --oneline
+  606  cat s1.txt
+  607  git switch master
+  608  cat s1.txt
+  609  git merge feature2
+  610  cat s1.txt
+  611  vi s1.txt
+  612  cat s1.txt
+  613  git add .
+  614  git commit -m "Conflict has been resolved"
+  615  git log --oneline
+  616  cat s1.txt
+  617  git status
+  618  clear
+  619  ls
+  620  cd ..
+  621  mkdir demorepo3
+  622  clear
+  623  cd demorepo3/
+  624  clear
+  625  git init
+  626  echo "rec1" >> s1.txt
+  627  git add .
+  628  git commit -m "cm1"
+  629  clear
+  630  git log --oneline
+  631  git branch feaure1
+  632  git branch feaure2
+  633  git branch
+  634  git switch feature1
+  635  git switch feaure1
+  636  clea
+  637  clear
+  638  git log --oneline
+  639  ls
+  640  echo "rec1" >> f1.txt
+  641  git add .
+  642  git commit -m "f1cm1"
+  643  clear
+  644  git status
+  645  git log --oneline
+  646  git rebase master
+  647  git switch master
+  648  git merge feaure1
+  649  git log --oneline
+  650  ls
+  651  git switch feaure2
+  652  git log --oneline
+  653  ls
+  654  echo "rec1" >> l1.txt
+  655  git add .
+  656  git commit -m "f2cm1"
+  657  git log --oneline
+  658  git rebase master
+  659  git log --oneline
+  660  git switch master
+  661  git log --oneline
+  662  git merge feaure2
+  663  git log --oneline
+  664  clear
+  665  ls
+  666  git branch
+  667  git log --oneline
+  668  ls
+  669  git branch -D feaure1
+  670  git branch
+  671  git branch feaure2
+  672  git switch feaure2
+  673  clear
+  674  git branch -M feature2_branch
+  675  git branch
+  676  git log --oneline
+  677  ckear
+  678  clear
+  679  git rebase master
+  680  clear
+  681  git log --oneline
+  682  git switch master
+  683  git log --oneline
+  684  git switch feature2_branch
+  685  clear
+  686  git log --onelin
+  687  git log --oneline
+  688  ls
+  689  clear
+  690  echo "rec1" >> q1.txt
+  691  git add .
+  692  git commit -m "f1cm2"
+  693  echo "rec1" >> q2.txt
+  694  git add .
+  695  git commit -m "f1cm3"
+  696  echo "rec1" >> q3.txt
+  697  git add .
+  698  git commit -m "f1cm4"
+  699  echo "rec1" >> q4.txt
+  700  git add .
+  701  git commit -m "f1cm5"
+  702  echo "rec1" >> q5.txt
+  703  git add .
+  704  git commit -m "f1cm6"
+  705  echo "rec1" >> q6.txt
+  706  git add .
+  707  git commit -m "f1cm7"
+  708  clear
+  709  git log --oneline
+  710  git rebase master
+  711  git switch master
+  712  git merge --squash feature2_branch
+  713  git status
+  714  git commit -m "f1b_Changes"
+  715  ls
+  716  git log --oneline
+  717  git show 1084384
+  718  git log --oneline
+  719  history
+
+
+Next ::
+
+		Git stash 
+		
+		Git Remote Repositories 
+		
+		Intro. to Jenkins 

@@ -1548,3 +1548,330 @@ Next ::
 		Git Remote Repositories 
 		
 		Intro. to Jenkins 
+
+###############
+12th Mar. 2024 	
+###############	
+			
+	
+		GIT Stash :::
+		
+			- It is used to save the uncommited changes to a temporary area.
+			
+		Repo :
+		
+			master - create a file, add to staging area, commit 
+			
+			Developer1 :
+			
+			Repo: 
+				master :
+					feature1 -- file1.txt ...... adding the changes to staging area
+
+				hot-fix_branch --> deal with prod_issues.
+				
+			Prod Issue :  adhoc task 
+			
+			
+			List - LIFO
+			
+			
+			git stash list 					# Used to get the list of stashed entries 
+			
+			git stash save "save_Message"	# Used to create a stash list by adding the uncommited changes from staging 
+			
+			git stash apply 				# Used to apply the latest entry from the stash list, back to staging area 
+			git stash apply stash@{1} 		# Used to apply a specific entry from the stash list, back to staging area 
+			
+			git stash drop 					# Used to delete/drop the latest entry from the stash list
+			git stash drop stash@{1}		# Used to delete/drop a specific entry from the stash list
+			
+			git stash pop 					# Used to apply the latest entry from the stash list, back to staging area as well as remove that entry from the stash list.
+			git stash pop stash@{1}			# Used to apply a specific entry from the stash list, back to staging area as well as remove that entry from the stash list. 
+				
+			git stash clear					# Used to clean-up the stash list	
+			
+				
+		
+		git cherrypick <commit_id> 			# Used to merge a specific commit(s) to the target branch
+											# As a best practice, we are not encourged to used Cherry-pick.(Avoid using it)
+	
+		git merge <feature_branch_Name>
+	
+							
+		Git Remote Repositories	:::
+		
+		github - remote git repository ::::
+		
+		Azure Repo 
+		
+		AWS Code commit 
+		
+		gitlab 
+		
+		bitbucket 
+				
+		www.github.com :::
+		
+		
+			Create repo in github 
+			
+			create branch 
+				
+			add changes 
+
+			commit changes 
+			
+			merge using pull request 
+			
+			
+			Developers' Work load ???
+			
+				Enhancement Project / Bugfixing 
+				
+			
+			
+			git clone 				==>		Is used to Clone/copy the entire remote repository to the local Machine
+			
+					git clone <remote_repo_clone_url>
+
+					git clone https://github.com/SA-DevOps-22Feb24/testremoterepo1.git
+
+					git clone -b main https://github.com/SA-DevOps-22Feb24/testremoterepo1.git
+					
+					
+			git add 				==>		Is used to add the changes from working directory to staging area.				
+			
+			git commit 				==> 	Is used to commit the changes from staging area to local repository.
+			
+			git push 				==> 	Is used to push the changes from Local Repository to Remote Repository
+			
+				to the changes to remote repositories 
+				we need github credentials.
+				
+				username :
+				access token :
+				
+				
+				Before push event we need to create github access token.
+				
+			
+			git fetch / git pull 	:::
+							
+							- Both Git Fetch and Git Pull are used to handle the incremental Changes from Remote to Local Repository.
+							
+							- git fetch --> Is just used to check for the incremental changes. If there are any changes exist in the remote repository, it will update the changes in the local repository. NOT is the Working Directory.
+							
+							- git pull --> Is used to check for the incremental changes and if there are any changes exist in the remote repository, it will update the changes in the local repository as well as in the Working Directory.	
+
+								git pull ==> git fetch and git merge
+			
+			
+			git remote -v 			==>		Is used to get the list of remote repository linked to the local repository
+			
+			git push -u origin localfeature1		==> Is used to push the changes to the remote repository using the credentials.
+			
+
+			git remote -v 			==>		Is used to get the list of remote repository linked to the local repository
+
+			Developers' Work load ???
+			
+				
+				New Project 
+
+			git init 
+			
+			git add 
+			 
+			git commit 
+			
+			git remote add origin https://github.com/SA-DevOps-22Feb24/dummyrepo1.git
+			
+			git push -u origin master 			
+  501  cd  d:
+  502  cd SA-Feb22-DevOps/
+  503  ls
+  504  mkdir sagitrepo1
+  505  cd sagitrepo1/
+  506  git init
+  507  clear
+  508  git branch
+  509  echo "rec1" >> file1.txt
+  510  git add .
+  511  git commit -m "CM1"
+  512  clear
+  513  git status
+  514  git switch -f feature1
+  515  git switch -c feature1
+  516  ls
+  517  git log --oneline
+  518  git switch master
+  519  git switch feature1
+  520  clear
+  521  ls
+  522  echo "rec1" >> s1.txt
+  523  git add .
+  524  git status
+  525  git switch master
+  526  git status
+  527  git switch feature1
+  528  git status
+  529  clear
+  530  git status
+  531  git stash list
+  532  git stash save "created for s1.txt"
+  533  git stash list
+  534  git status
+  535  ls
+  536  git ls-files
+  537  clear
+  538  echo "rec1" >> q1.txt
+  539  git add .
+  540  git stash list
+  541  git stash save "created for q1.txt"
+  542  git stash list
+  543  git status
+  544  ls
+  545  echo "rec1" >> w1.txt
+  546  git add .
+  547  git stash save "created for w1.txt"
+  548  git stash list
+  549  ls
+  550  git stash apply
+  551  git stash list
+  552  git commit -m "created w1.txt"
+  553  git status
+  554  ls
+  555  git stash list
+  556  git stash drop
+  557  git stash list
+  558  git stash apply stash@{1}
+  559  git commit -m "Created s1.txt"
+  560  git status
+  561  git stash list
+  562  git stash drop stash@{1}
+  563  git stash list
+  564  clear
+  565  git status
+  566  ls
+  567  git stash list
+  568  echo "rec1" >> k1.txt
+  569  git add .
+  570  echo "rec1" >> t1.txt
+  571  git add .
+  572  git status
+  573  git stash save "created for k1 and t1"
+  574  ls
+  575  git stash list
+  576  echo "rec1" >> o1.txt
+  577  git add .
+  578  git stash save "for o1.txt"
+  579  echo "rec1" >> r1.txt
+  580  git add .
+  581  git stash save "for r1.txt"
+  582  clear
+  583  git stash list
+  584  git stash pop
+  585  git stash list
+  586  git status
+  587  git commit -m "created r1.txt"
+  588  clear
+  589  git stash list
+  590  git stash clear
+  591  git stash list
+  592  git branch
+  593  cd ..
+  594  clear
+  595  ls
+  596  mkdir remoterepos
+  597  cd remoterepos/
+  598  clear
+  599  git clone https://github.com/SA-DevOps-22Feb24/testremoterepo1.git
+  600  l
+  601  ls
+  602  cd testremoterepo1/
+  603  ls
+  604  git status
+  605  git log --oneline
+  606  git remote -v
+  607  git branch
+  608  ls
+  609  git switch -c localfeature1
+  610  ls
+  611  git log --oneline
+  612  git status
+  613  ls
+  614  echo "rec1" >> localfile1.txt
+  615  git add .
+  616  git commit -m "created localfile1.txt"
+  617  ls
+  618  git log --oneline
+  619  clear
+  620  git remote -v
+  621  git push -u origin localfeature1
+  622  git switch main
+  623  clear
+  624  ls
+  625  git status
+  626  git fetch
+  627  ls
+  628  git log --oneline
+  629  git status
+  630  git pull
+  631  ls
+  632  clear
+  633  git status
+  634  git log --oneline
+  635  git fetch
+  636  git status
+  637  git pull
+  638  ls
+  639  clear
+  640  git status
+  641  git pull
+  642  cd ..
+  643  mkdir dummyrepo1
+  644  cd dummyrepo1/
+  645  clear
+  646  git init
+  647  echo "rec1" >> f1.txt
+  648  git add .
+  649  git commit -m "cm1"
+  650  git log --oneline
+  651  git remote -v
+  652  git remote add origin https://github.com/SA-DevOps-22Feb24/dummyrepo1.git
+  653  git remote -v
+  654  git branch -M main
+  655  git branch -M master
+  656  git push -u origin master
+  657  git remote remove origin
+  658  git remote -v
+  659  git remote add origin https://github.com/SA-DevOps-22Feb24/dummyrepo1.git
+  660  git remote -v
+  661  git remote remove origin
+  662  git remote -v
+  663  cd ..
+  664  cd ..
+  665  ls
+  666  history			
+			
+Summary :::
+
+		git file workflow
+		
+		git branching techniques
+		
+		git merge / merge-conflicts / rebase / squash / stash 
+		
+		git ignore 
+		
+		git reset/ revert 
+		
+		Handling remote git repositories
+			
+			
+				
+Next ::
+
+		Jenkins 
+

@@ -1,0 +1,185 @@
+		
+###############
+13th Mar. 2024 	
+###############				
+			
+		DevOps - Build Orchestration Tool : Jenkins
+			
+			- Jenkins is a open-source build orchestration tool
+			- Used to create end-to-end DevOps CI/CD Pipeline
+			- Automate Build and Deployments 
+			- Jenkins is based on Master Slave Architecture
+			- Jenkins Pipeline scripts are written using groovy scripting language 
+			
+		Jenkins Architecture :
+			- Master Slave Architecture
+			
+		   Ubuntu Machine :	Virtual Machine
+			
+			AWS Cloud Platform :
+				VM Ubuntu 
+					Jenkins_Master (VM)		--> It is used to create Jenkins CICD Pipeline Projects/Jobs and Schdule the jobs to run in slave Nodes.
+						Jenkins_Slave Node (VM) 	--> It is used to run the actual Jenkins Pipeline Project.
+
+
+			Tools to be installed :
+				Jenkins_Master 	(VM)	--> 	git, jdk, jenkins
+					Jenkins_Slave (VM)	-->     Build Tools: git, jdk, maven 
+				
+			Tools to be installed :
+				Jenkins_Master 	(VM)	--> 	git, jdk, jenkins, jdk, maven, python  
+
+				Java 
+				python 
+				.net 
+				angular 
+				nodejs 
+				
+			Tools to be installed :
+				Jenkins_Master 	(VM)	--> 	git, jdk, jenkins		==> Create and schedule Jenkins CICD Pipeline Projects/Jobs
+					
+					Jenkins_Slave1 (VM)	-->     Java - git, jdk, maven 				
+					Jenkins_Slave2 (VM)	-->     Python - git, python  								
+					Jenkins_Slave3 (VM)	-->     .Net   - git, .Net Framework  
+					Jenkins_Slave4 (VM)	-->     Angular  
+					Jenkins_Slave5 (VM)	-->     NodeJS  					
+				
+			
+			Skill : Handling Git and basic scripting knowledge 
+			
+			
+				
+				
+				
+	Environments ::
+	
+	Non-Prod Environments																	Prod Environment
+	
+		Dev Environment - Local Machine(Laptop)
+		Testing Environment
+			QA  Quality Assurance Testing 
+				functional/integration/regression....
+			UAT	User Acceptance Testing											-->				Production Environment(Servers)
+				This testing will be done using LIVE production data.
+				business users
+						
+					
+			Source_Code 
+			Build 
+			Unit Testing 
+			Deploy to QA 
+			Perform QA Testing 
+			Deploy to UAT 
+			Perform UAT Testing 
+			Deploy to Production Environment
+					
+		
+		
+		Roles and Responsibilities of DevOps Engineer :
+		
+		Jenkins can be used ::
+		
+			Developers' Perspective :
+				- Developers are just the consumers of Jenkins CICD Projects				
+
+			DevOps Perspective : - Administration of Jenkins Servers and Tools 
+				
+				
+				- Installation of Jenkins
+				- Jenkins System Management 
+				- Management of Plugins 
+				- Tools Management 
+				- User Management
+				- Credential Management 
+				- Security Management 				
+				- Configuration of jenkins Master Slave Nodes Architecture
+				- Create CICD Pipeline Projects/Jobs 
+				- Onboard the Applications to Jenkins 
+				- Trobleshooting the Issues related to Jenkins/pipeline Projects 
+				- Back-up and Recovery
+				- Periodic upgrade of Jenkins and its plugins
+				
+			
+				
+			Installation of Jenkins :::
+			
+				Open-Source Tools :: Jenkins 
+			
+				Managed Services :
+					AWS Code-Pipeline Service 
+					Azure Pipeline Service 
+					gitlab-ci
+					
+					
+				Installation of Tools :
+
+					Infra-Structure (VM)
+					Install the pre-requisites - jdk 
+					Install the Actual Tool    - jenkins - Runs in default port: 8080 as a webservice
+					Post Installation Activities - Set the Jenkins service and start the service
+				
+				0. Create AWS - Free Tier Account 
+							12 months access
+							You can keep ur EC2 Instances running for 750 Hours / Month
+								1 VM 	- 750 hrs/month
+								10 VMs 	- 75 hrs/month
+							Stop the instance as soon the task is over.
+							Terminate the instance, when it is not required.
+							Data Transfer rate - 1GB 						
+					
+					
+				1. Launch AWS - Ubuntu Machine 
+					- 2 VMs - (Jenkins_Master,Jenkins_Slave)
+				2. Enable Port 8080 
+				
+				3. Install Jenkins along with its depedencies 
+						https://www.jenkins.io/doc/book/installing/						
+				4. Start Jenkins 
+				
+
+0. Launch Ubuntu v20.04 - AWS EC2 Instance 	
+		Enable Port 8080
+
+		Connect to EC2 Instance using :
+			EC2 Instance Connect 
+			SSH Agents : 
+				MobaXterm 
+				Putty 
+			Terminal 
+			
+1. Install the pre-requisites :::
+
+# Install Jdk:
+
+sudo -i 			
+sudo apt update -y
+
+sudo apt install openjdk-17-jre -y 						
+java -version						
+
+2. Install the Actual tool :::
+ 								
+#Install Jenkins:
+
+sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+
+sudo apt-get update -y
+
+sudo apt-get install jenkins -y		
+
+jenkins --version 
+			
+Install GIT :
+
+sudo apt install git -y
+			
+			/var/lib/jenkins			# Jenkins Default Directory.
+			
+			Access Jenkin using web browser:
+				<public_ip_addr>:8080
+				13.232.252.38:8080

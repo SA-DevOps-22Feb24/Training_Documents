@@ -143,7 +143,7 @@
 		Connect to EC2 Instance using :
 			EC2 Instance Connect 
 			SSH Agents : 
-				MobaXterm 
+				MobaXterm  https://mobaxterm.mobatek.net/download.html
 				Putty 
 			Terminal 
 			
@@ -183,3 +183,158 @@ sudo apt install git -y
 			Access Jenkin using web browser:
 				<public_ip_addr>:8080
 				13.232.252.38:8080
+
+
+
+
+###############
+14th Mar. 2024 	
+###############	
+
+		Jenkins Plugins Management :::
+		
+			Plugins are the extension to Jenkins.
+			
+				Maven Build 
+				
+				Install/Uninstall/upgrade the plugins
+
+
+		User and Security Management 
+
+
+
+		Create CICD Pipeline Projects/Jobs :::
+		
+		Jenkins Projects/Jobs :::
+		
+			- Free-Style Projects
+					Manually Configure any type of Projects 
+					Completely Manual configuration
+				
+			
+			- Pipeline Projects
+					Written using groovy script 
+					Used to Create CICD Pipeline Jobs
+					
+					
+			Free-Style Jenkins Project 
+				- Configure the Project 
+				
+				
+			Handling Variables in Jenkins :::
+					
+				- Environment Variables 		# pre-defined keywords 
+
+					echo "jenkins-${JOB_NAME}-${BUILD_NUMBER}"					
+					
+					"${JOB_NAME}" 
+
+					
+				- User Defined Variables 		# It is used to pass run time inputs to job
+
+
+			Pipeline Projects :::		# Writted using groovy scripts & Reusable!
+			
+				- Scripted Pipeline 	# it uses the typical scripting Language. 
+				
+				
+				- Declarative Pipeline 	# are the simplified version of Scripted Pipelines
+				
+				
+				Pipelines are composed of many Stages:
+				Stages are composed of many task enclosed in step:
+				
+				Pipeline 
+				{
+					Stages 
+					{
+						stage1
+						{
+							Steps
+							{
+								task1
+								task2
+								task3
+							}
+						}
+						stage2
+						{
+							Steps
+							{
+								task1
+								task2
+								task3
+							}
+						}
+					}
+				}
+			
+		
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Hello1') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Hello2') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}			
+
+
+Create a Jenkins Pipeline to Build and Deploy the Application to QA Environment :::	
+
+
+
+				
+pipeline {
+    agent any
+
+    stages {
+        stage('SCM Checkout') {
+            steps {
+                echo 'Hello World'
+				git "clone the Repo"
+            }
+        }
+        stage('Java Application Build') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Deploy to QA Environment') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Deploy to UAT Environment') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Deploy to PROD Environment') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}					
+		
+Next :
+
+			Master-Slave Configure
+
+			How to Define the Pipeline stages for CICD
+		

@@ -338,3 +338,249 @@ Next :
 
 			How to Define the Pipeline stages for CICD
 		
+
+###############
+18th Mar. 2024 	
+###############		
+
+		Master-Slave Configure
+
+		How to Define the Pipeline stages for CICD		
+	
+			Tools to be installed :
+				Jenkins_Master 	(VM)	--> 	git, jdk, jenkins		==> Create and schedule Jenkins CICD Pipeline Projects/Jobs
+					
+					Jenkins_Slave1 (VM)	-->     Java - git, jdk, maven 				
+					Jenkins_Slave2 (VM)	-->     Python - git, python  								
+					Jenkins_Slave3 (VM)	-->     .Net   - git, .Net Framework  
+					Jenkins_Slave4 (VM)	-->     Angular  
+					Jenkins_Slave5 (VM)	-->     NodeJS 	
+					
+		
+		Launch :
+		
+			2 VMs 
+			
+				Jenkins_Master		--> git, jdk, jenkins 
+					Jenkins_Slave 	--> jdk, git, maven 
+			
+				SSH Connection - port:22  
+					Host_Name 
+					User_Name 
+					SSH_Key
+					
+				Types of Authentications :::
+				
+					Password based Authentication
+					Token based Authentication
+					Key based Authentication
+						- private key and public key 
+					Passwordless Authentication
+					
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#Configure Slave Node1 for Java Maven App. :
+
+#Launch VM - 
+#0. Launch Ubuntu v20.04 - AWS EC2 Instance 
+
+sudo -i
+
+apt update -y 
+
+Install Java ::
+
+sudo apt update -y 
+sudo apt install openjdk-11-jre -y
+java -version
+
+Install GIT :
+
+sudo apt install git -y
+
+Install Maven - Build Tool :
+https://maven.apache.org/install.html
+
+sudo apt install maven -y 
+
+
+Create User in Jenkins Slave Machine & Create SSH Keys 
+
+	SSH Keys --> is composed of public and private keys 
+
+
+#Add User : 
+
+useradd devopsadmin -s /bin/bash -m -d /home/devopsadmin
+
+su - devopsadmin
+
+#ssh-keygen
+
+#for Ubuntu ::
+ssh-keygen -t rsa -b 1024 -m PEM
+
+
+ls ~/.ssh 
+
+#You should see following two files:
+
+#id_rsa - private key
+#id_rsa.pub - public
+
+
+cat id_rsa.pub > authorized_keys
+
+chown -R devopsadmin /home/devopsadmin/.ssh
+chmod 600 /home/devopsadmin/.ssh/authorized_keys
+chmod 700 /home/devopsadmin/.ssh
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Add Slave Node to Jenkins Master using Jenkins Console.				
+			
+			
+
+	Create Jenkins CICD Pipeline ::
+	
+	
+pipeline {
+    agent { label 'slave1' }
+
+    stages {
+        stage('SCM Checkout') {
+            steps {
+                echo 'Perform SCM Check-Out'
+				echo 'Cloning Java Maven App Code'
+				git 'https://github.com/LoksaiETA/Java-mvn-app2.git'
+            }
+        }
+        stage('Java Application Build') {
+            steps {
+                echo 'Perform Java Maven Application Build'
+                sh 'mvn clean package'
+            }
+        }
+        stage('Deploy to QA Environment') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}	
+
+
+Deploy the artifacts to QA Environment :::
+
+
+
+	Jenkins_Master 
+		Jenkins_Slave   - *.war
+		
+	QA_Server	(VM) 
+		Tomcat Web Application Server - 8080
+		
+######################Install TOMCAT Application Server on Ubuntu :::
+#Launch VM - 
+#0. Launch Ubuntu v20.04 - AWS EC2 Instance
+add port 8080 in the inbound rule.
+
+sudo -i
+
+sudo apt update -y 
+
+
+sudo apt install openjdk-11-jre -y 
+java -version
+
+#edit /etc/profile & add JAVA_HOME
+
+#/usr/lib/jvm/java-11-openjdk-amd64/
+
+vi /etc/profile
+
+export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
+
+source /etc/profile
+
+Install Tomcat ::  https://tomcat.apache.org/download-80.cgi
+
+https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.99/bin/apache-tomcat-8.5.99.tar.gz
+
+
+cd /opt
+wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.99/bin/apache-tomcat-8.5.99.tar.gz
+
+tar -xvzf /opt/apache-tomcat-8.5.99.tar.gz
+
+mv apache-tomcat-8.5.99 tomcat
+
+#Start Tomcat Server:
+#Goto:
+
+cd /opt/tomcat/bin
+./startup.sh
+
+###########################################
+
+#Add User : 
+
+useradd devopsadmin -s /bin/bash -m -d /home/devopsadmin
+
+su - devopsadmin
+
+#ssh-keygen
+
+#for Ubuntu ::
+ssh-keygen -t rsa -b 2048 -m PEM
+
+
+ls ~/.ssh 
+
+#You should see following two files:
+
+#id_rsa - private key
+#id_rsa.pub - public
+
+
+cat id_rsa.pub > authorized_keys
+
+chown -R devopsadmin /home/devopsadmin/.ssh
+chmod 600 /home/devopsadmin/.ssh/authorized_keys
+chmod 700 /home/devopsadmin/.ssh
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#make devopsadmin user as a owner to tomcat dir :
+
+chown -R devopsadmin /opt/tomcat
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~		
+		
+
+What is Deployment ?
+
+	Process of copying the artifacts to target environments.
+	
+	Source Machine 														Target Machine 
+	
+		Slave_Node1							=========>						Tomcat_Server
+		
+			Source Path:															Target Path:
+			
+				target/*.war 															/opt/tomcat/webapps/
+
+Next :::
+
+	Through Jenkins Master How to Achieve this?
+
+		In jenkins Master, install Publish Over SSH Plugin  
+	
+	Complete the Jenkins CICD Pipeline 
+	
+	Build Trigger
+
+	Email Notifications 
+	
+	Trigger Jenkins Pipeline from Eclipse using code commits 
+	

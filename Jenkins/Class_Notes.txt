@@ -584,3 +584,115 @@ Next :::
 	
 	Trigger Jenkins Pipeline from Eclipse using code commits 
 	
+###############
+19th Mar. 2024 	
+###############
+
+	
+
+		In jenkins Master, install Publish Over SSH Plugin  		
+
+		Using this plugin the remote servers can be connect to Jenkins Master 
+		
+		goto manage jenkins --> Plugins --> Avaliable Plugins - search for 'Publish Over SSH'  --> install and restart JEnkins
+		
+		Goto Manage Jenkins --> System --> Publish Over SSH plugin for configuration.
+		
+
+CICD Pipeline :::
+	
+pipeline {
+    agent { label 'slave1' }
+
+    stages {
+        stage('SCM Checkout') {
+            steps {
+                echo 'Perfomr SCM Check-Out'
+				echo 'Cloning Java Maven App Code'
+				git 'https://github.com/LoksaiETA/Java-mvn-app2.git'
+            }
+        }
+        stage('Java Application Build') {
+            steps {
+                echo 'Perform Java Maven Application Build'
+                sh 'mvn clean package'
+            }
+        }
+        stage('Deploy to QA_Tomcat_Server') {
+            steps {
+ 				script {
+ 				    sshPublisher(publishers: [sshPublisherDesc(configName: 'SA-Tomcat_Server', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '.', remoteDirectorySDF: false, removePrefix: 'target/', sourceFiles: 'target/mvn-hello-world.war')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
+ 				}
+                
+            }
+        }
+    }
+}	
+		
+		
+
+	Build Triggers :::
+	
+		Automated Build 
+		
+		Scheduling the jobs 
+		
+		
+		- Build Periodic:
+				- It is used to run the job based on the cron tab schedule.
+				Eg.: Trigger the Jobs for every 2 minute 
+				
+				Non-Prod Servers												Prod Servers 
+				
+				Dev server
+				build server 
+				qa, uat 															production servers
+		
+			start all the non-prod servers Week-days at 8AM 
+			stop all the non-prod servers Week-days at 10PM 
+		
+		
+		
+		- poll SCM :::
+		
+				- It is used trigger the jenkins job if there is any commit happened in the source code repository and it gets triggered based on the schedule.
+				
+				- Both Build Periodic and Poll SCM uses the corntab for scheduling the jobs.
+				
+				Eg.: 
+				
+				H/2 * * * *
+			
+				POLL SCM will trigger the job for every 2 mins, only if there is any changes happened in the source repository.
+				
+				
+				Test Cycle :::
+				
+					8AM   -  12PM	- 3PM 		--> 3 times QA Testing happens
+				
+				
+				
+				
+		
+		- GITHUB Webhook ::
+		
+				Is used to trigger the jenkins job whenever there is a change in github source code repository 
+				
+				Need to config github webhook url in source code repository
+				
+				http://13.201.136.71:8080/github-webhook/
+				
+				<Public_IP_Address>:8080/github-webhook/
+				
+				http://20.197.33.227:8080/github-webhook/
+		
+		
+
+
+Next :::
+
+		Email Notifications :::
+		
+			gmail account --> 
+			MFA - Two - way Auth - using active Mobile Number
+			App Password - 16Bytes of token 

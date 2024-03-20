@@ -1,0 +1,3282 @@
+DevOps SA2312018 
+
+22nd Feb. 2024 
+
+8PM IST to 10:30 PM
+
+Appln. Development 
+
+Java Fundamentals 
+
+
+Python Fundamentals 
+SQL Fundamentals 
+
+
+Application Build
+
+AWS Fundamentals 
+
+Linux OS Fundamentals
+ 
+
+DevOps Modules 
+
+GIT 
+
+JENKINS
+
+
+AWS Fundamentals :
+
+	- 
+	
+Java Fundamentals 
+
+	- Create Java Web Applications & Console Applications 
+	- How to Build and Deploy the Java Web and Console Applications
+	- Application Development and Deployment Tools ::
+
+Practise Java  Fundamentals ::
+	- 
+	
+Python Fundamentals 
+
+	- Create Python Web Applications & Console Applications 
+	- How to Build and Deploy the Python Web and Console Applications
+	- Application Development and Deployment Tools
+
+
+AWS Fundamentals
+Linux Fundamentals
+
+Application Fundamental Modules :
+
+Java Fundamentals 
+
+Next :::
+
+	Python Fundamentals
+	SQL 
+	Build Tools - Maven
+
+DevOps Modules :::
+
+	GIT 
+	Jenkins 
+	Docker 
+	Ansible
+	Terraform 
+	Kubernetes
+	Prometheus
+	Grafana
+
+
+What is Application?
+
+How it is developed, build, tested and deployed ?
+
+What are the tools used for development, testing and development ?
+
+Next :::
+
+	Python Fundamentals
+	SQL 
+	Build Tools - Maven
+
+What is Linux ? What is the use? Why to Learn ?
+	What are the practical you did in Linux?
+	
+	Installation 
+	Shell Scripting 
+	create dir & Files
+	Permissions
+	RWX
+	Copying / Moving files
+	Create Users.
+	
+
+AWS :
+	AWS Free Tier Account Created ? 
+	Launched Ubuntu - EC2 Instance ?
+	Putty / Mobaxterm ?
+	
+	Connect to EC2 Instance using Putty/MobaXterm ?
+	
+Java : ***
+
+	- Fundamentals of Programming 
+	- In your Local Windows Machine
+		- jdk
+		- Eclipse 
+		- Tomcat
+		
+	- Create Java Web Applications & Console Applications ?
+	
+	- How to Build and Deploy the Java Web and Console Applications
+			- Maven to Create Java Console and Web Applications ?
+			- Maven Springboot Web Application
+			- What is Maven ?
+			- What are the Properties of Maven ?
+				- pom.xml ?
+				- maven goal ?
+			
+	- Application Development and Deployment Tools :::
+	
+Introduction to DevOps ?
+
+	- What is DevOps ?
+	- Devops Tools ?
+	GIT 
+	Jenkins 
+	Docker 
+	Ansible
+	Terraform 
+	Kubernetes
+	Prometheus
+	Grafana
+
+	- DevOps Stages ?
+		- Continuous Development
+		- Continuous Integration 
+		- Continuous Testing
+		- Continuous Delivery / Continuous Deployment 
+		- Continuous Monitoring
+
+	What is DevOps all About ???? with all these stages?
+	
+	- DevOps LifeCycle ?
+	
+	DevOps Stages ???
+	
+Java Assignments ???
+	
+	
+Next :::
+
+	Java - Assignment in progress 	
+	Build Tools - Maven	
+	Python Fundamentals
+	
+	SQL 
+	
+	GIT 
+	Jenkins 
+	
+Application Development Fundamentals :::
+
+Lets' Discuss on DevOps :
+
+Roles and Responsibilities ???
+
+As a DevOps Associate ?? 
+	Roles and Responsibilities ???
+	
+	Wat are the Skills needed for DevOps Associates ???
+	
+	10 / 10 -- should be clear ::
+		- Understand the core concept
+		- Practise that core concept 
+		- Related that core concept with real-time scenarios
+		- Continously practise as much as possible
+		
+		
+Application Development Fundamentals :::
+
+	Application :::	- set/collection of programs - Programming Languages!(java/.net/python)
+		Banking Applications
+		Retails Applications
+		Insurance Applications
+	
+	Software 	
+		- Application Software 
+			- Desktops Applications
+					Billing System 
+			- Web Applications
+					Online Banking/Gmail/Amazon
+			- Mobile Applications
+					
+			
+		- System Software
+				
+	
+	
+	Software Development Lifecycle - SDLC Methodologies ::
+	
+	
+	Billing System - Application Project :
+	
+		- Task/Functions? - 
+		- How much time to complete 
+		- How many resources needed 
+		- What are the tools needed ?
+	
+	- Requirement Analysis 
+	- Design & Document 
+	- Code 
+	- Testing 
+	- Deployed to Production
+	- Maintainence / Monitor 
+	
+	Waterfall Model :::
+			- Linear in approach 
+			- Strictly follows top-down approach
+	
+		Billing System - Application Project : 10 Functions + 1 
+
+			Billing System - Application Project : 4 Functions/Modules  
+				Stock Maintainence
+				Customer Maintainence
+				Billing 
+				Inventory 
+
+		
+			12 Months to Complete the Project.
+			
+				5th Month of SDLC 
+	Core_Project :
+		- Requirement Analysis 
+		- Design & Document 
+		- Code 						--> current phase
+		- Testing 
+		- Deployed to Production
+		- Maintainence / Monitor 
+	
+	Enhancement_Project :
+		- Requirement Analysis 
+		- Design & Document 
+		- Code 						--> current phase
+		- Testing 
+		- Deployed to Production
+		- Maintainence / Monitor 
+	
+	
+	
+	AGILE Methodologies ::
+
+			Identify the functions / Modules 
+			
+			Application is divided into various Modules 
+			
+			Billing System - Application Project : 4 Functions/Modules  - Iteration
+				Stock Maintainence
+				Customer Maintainence
+				Billing 
+				Inventory 
+				
+				Card Payment 
+				
+				
+
+	Iteration1 : Stock Maintainence
+		- Requirement Analysis 
+		- Design & Document 
+		- Code 						--> current phase
+		- Testing 
+		- Deployed to Target Environments for further testing 
+		- Maintainence / Monitor 
+
+
+	Iteration2 : Customer Maintainence
+		- Requirement Analysis 
+		- Design & Document 
+		- Code 						--> current phase
+		- Testing 
+		- Deployed to Target Environments for further testing 
+		- Maintainence / Monitor 
+
+	Iteration3 : Billing
+		- Requirement Analysis 
+		- Design & Document 
+		- Code 						--> current phase
+		- Testing 
+		- Deployed to Target Environments for further testing 
+		- Maintainence / Monitor 
+
+	Iteration4 : Inventory 
+		- Requirement Analysis 
+		- Design & Document 
+		- Code 						--> current phase
+		- Testing 
+		- Deployed to Target Environments for further testing 
+		- Maintainence / Monitor 
+
+	Iteration-nth : Card Payment
+		- Requirement Analysis 
+		- Design & Document 
+		- Code 						--> current phase
+		- Testing 
+		- Deployed to Target Environments for further testing 
+		- Maintainence / Monitor 
+		
+		
+	Application Architecture ::
+	
+		Monolith Application Architecture 
+		
+		Micro-Service Based Application Architecture
+		
+	Using AGILE, we can perform:
+	
+		Continuous Development
+		Continuous Integration
+		Continuous Testing
+		
+		Continuous Delivery	:
+			It expects the Manual approval for the production release 
+		
+	But we cannot perform :
+		
+		Continuous Deployment
+			It does not expects the Manual approval for the production release 
+		
+	
+	DevOps : ???
+	
+		- DevOps is Software Development Strategy, which helps to promote the collaboration between the teams like Development Team and Operations Team to achieve Continuous Development, Continuous Integration, Continuous Testing, Continuous Delivery, Continuous Development and Continuous Monitoring in fully Automated fashion.
+		
+	DevOps Stages ::
+	
+		Continuous Development
+		Continuous Integration
+		Continuous Testing
+		Continuous Delivery / Deployment
+		Continuous Monitoring
+		
+		
+	Teams Involved :::
+	
+		Infra-Structure Management Team 
+			
+		Application Development Team 
+		
+		Testing 
+		Release Management Team 
+		Production Support Team 
+		Production Monitoring Team 
+		Security Team 
+		
+		
+Next ::
+	
+	Continue with Application Fundamentals
+	Java Application 
+		Create Java Applications - Console Application / Web Application
+		Maven Build Tools 
+			- Create Maven Console and Web Applications
+			- Create Maven Springboot Web Applications 
+	Python
+	SQL 
+	GIT 
+	Jenkins 
+
+###############
+26th Feb. 2024 	
+###############
+
+	Continue with Application Fundamentals
+	
+	Java Application 
+		Create Java Applications - Console Application / Web Application
+		Maven Build Tools 
+			- Create Maven Console and Web Applications
+			- Create Maven Springboot Web Applications 	
+	
+	
+	Continue with Application Fundamentals on DevOps Perspective ::::	
+
+
+	Environments ::
+	
+	Non-Prod Environments																	Prod Environment
+	
+		Dev Environment - Local Machine(Laptop)
+		Testing Environment
+			QA  Quality Assurance Testing 
+				functional/integration/regression....
+			UAT	User Acceptance Testing											-->				Production Environment(Servers)
+				This testing will be done using LIVE production data.
+				business users
+				
+		Telecomm service providers ::
+		
+		Service provider1 --> Introduce a new plan to their customers
+		Outlets - 
+
+www.amazon.com ==> E_Commerce Portal		
+			
+	DevOps Stages ::
+	
+	
+	
+		Continuous Development :
+		
+			- It is a capability of Application Team to continuously develop the projects
+			- Improve productivity of Developers 
+			
+			Role of the Developers :::
+			
+				- Understand the Application Design 
+				- coding - source code development (java/python)
+				- Build  - It is a process of compiling the source code and create artifacts(Binaries - *.war / *.jar/ *.exec) 
+				- Unit Testing 
+				- Promote the changes to higher environments for further testing (QA/UAT)
+				- Notify the testing teams to pick the changes for further testing
+				
+			Using DevOps Approach 
+			
+				- Code the Application 
+				- Update the source code in the Source Code Repository like Github 
+				
+			Using DevOps Process & Tools Automate :
+			
+				- Build  - It is a process of compiling the source code and create artifacts(Binaries - *.war / *.jar/ *.exec) 
+				- Unit Testing 
+				- Promote the changes to higher environments for further testing (QA/UAT)
+				- Notify the testing teams to pick the changes for further testing	
+
+			Tools :::
+			
+				Eclipse based IDEs - Integrated Development Environment 
+				JDK , Python, .Net Core , Angular, NodeJS 
+				Build Tools : Maven, Gradle, Ant 
+				Unit Testing Tools : JUNIT, TestNG 
+				Jenkins Integration 
+		
+		Continuous Integration ::
+			- It is a capability of Application Team to continuously Integrate the code for further testing.
+		
+			Billing System - Application Project : 4 Functions/Modules  
+				Stock Maintainence			Developer1  - Code, build, unit-testing - Promote the code to QA Testing
+				Customer Maintainence		Developer2  - Code, build, unit-testing - Promote the code to QA Testing
+				Billing 
+				Inventory 
+
+			Tools :
+			
+				Eclipse based IDEs - Integrated Development Environment - Eclipse / Visual Studio Code / Visual Studio / Pycharm 
+				Jenkins 
+				Docker, Ansible 
+				
+		
+		Continuous Testing
+		
+			- It is done using Automated Testing Tools like 
+
+			Tools :
+			- JUnit / TestNG / Selenium 
+					- Create some test case/test data 				
+			- Jenkins 
+				
+				
+		Continuous Delivery / Deployment
+			- Both Continuous Delivery and Continuous Deployment are used to release the changes to Production Environments
+						
+			Continuous Delivery	:
+				It expects the Manual approval for the production release 			
+			
+			Continuous Deployment
+				It does not expects the Manual approval for the production release 	
+
+			Tools :
+			
+				Jenkins, Docker, Ansible, Kubernetes
+						
+			
+		Continuous Monitoring ==> Used to achieve Business Continuity
+		
+			Infra-Structure Monitoring 
+				Production Servers to be monitored 
+					CPU/Memory/Traffic
+					
+			Tools :
+				Prometheus / Grafana / Splunk / Nagios / Dynatace 
+	
+		www.amazon.com ==> E_Commerce Portal		
+	
+			Application Monitoring
+			
+				App-Dynamics / Datadog
+	
+	
+	
+		Infra-Structure Management :::
+		
+		Infra-Structure Management Team 
+			Provision Infra-Structure 
+				Create the Servers 
+				Configure the servers 
+				
+			Tools : 
+			
+				IAC Tools - Infra-Structure As Code :
+				
+					Terraform 		- Provisioning/Creating the Servers 
+					
+					Ansible 		- Configuration Management and deployments 
+				
+		
+			
+	Environments ::
+	
+	Non-Prod Environments																	Prod Environment
+	
+		Dev Environment - Local Machine(Laptop)
+		Testing Environment
+			QA  Quality Assurance Testing 
+				functional/integration/regression....
+			UAT	User Acceptance Testing											-->				Production Environment(Servers)
+				This testing will be done using LIVE production data.
+				business users
+			
+	Continuous Delivery / Deployment
+		- Both Continuous Delivery and Continuous Deployment are used to release the changes to Production Environments
+					
+		Continuous Delivery	:
+			It expects the Manual approval for the production release 
+			Expect the Downtime. 
+
+
+		On-Banking Services ::: Net-Banking / On Credit Card Transaction 
+		
+			Release some new feature / Fix some issues in the Production Environment 
+			
+				Fix the Production Release Window (4 - 6 Hrs.)  - Current V1.1
+				Weekends / Mid-Night / Early Mornings 
+				
+				d/t/r/s/i Teams --> give approval for production release  V1.2 
+					if the production release failed, 
+						- fix the issue with the release window.
+						- Revert the Changes
+		
+		Continuous Deployment
+			It does not expects the Manual approval for the production release 	
+			Release the products and features without any downtime
+
+		Tools :		
+			Jenkins, Docker, Ansible, Kubernetes		
+		
+		Facebook/Netflix/Google/www.amazon.com
+		
+			Very Matured level of DevOps strategies/Process to achieve Continuous Deployment.
+			
+			
+		How to Achieve Continuous Deployment :::
+		
+			Application Architecture ::
+			
+				Monolith Application Architecture 
+					- Tightly coupled applications 
+					- It has all the dependencies tightly coupled 
+					
+				Micro-Service Based Application Architecture :
+					- Loosely coupled Applications
+					- Here the Modules/Functions/Iterations are considered as micro-service.
+					- These micro-services can be independently developed, build, tested and deployed to production.
+					
+					
+		www.amazon.com - E_Commerce Portal :::
+			Web Application:
+				Function:
+		
+		Sign_up			micro-service1 - developer1 - independently code, build, unit-test, promote the changes to testing & Production Environments 
+		Sign_in			micro-service2 - developer2 - independently code, build, unit-test, promote the changes to testing & Production Environments
+		search
+		add_to_cart
+		Place_Order 
+		Payment 
+		Confirm_Order 
+		Track 
+		
+
+		- DevOps is Software Development Strategy, which helps to promote the collaboration between the teams like Development Team and Operations Team to achieve Continuous Development, Continuous Integration, Continuous Testing, Continuous Delivery, Continuous Development and Continuous Monitoring in fully Automated fashion.
+
+		
+		DevOps - All about 
+				People 
+				Process 
+				Tools 
+				
+		
+		Continuous Development :::
+		
+			On DevOps perspective we learn about Application Development, Build and Deployments process. 
+			
+			Java Application 
+				Create Java Applications - Console Application / Web Application
+				Maven Build Tools 
+					- Create Maven Console and Web Applications
+					- Create Maven Springboot Web Applications 
+			Python		
+				Create Python Applications - Console Application / Web Application
+	
+		
+		
+			Java Application 
+				Create Java Applications - Console Application / Web Application
+				
+				Tools Requirements :
+				
+					- jdk - to be installed in Developer Machine 
+					- IDE - Eclipse IDE for Java Console and Web Application Developers
+					- Tomcat Server - Is a web application server.
+						- Used to run the Web applications
+					- GIT - Maintain Source Code 
+		
+		
+	Tool: 
+		Develop --> IDE - Eclipse,GIT,JDK
+
+	Windows Machine	::
+	
+	JDK :::
+		https://jdk.java.net/java-se-ri/11
+			- select window version
+		Define Environment Variable in Windows Machine.
+
+		
+	Eclipse :::
+		https://www.eclipse.org/downloads/
+			Choose : Eclipse IDE for Enterprise Java and Web Developers  
+	
+	Tomcat :::
+		https://tomcat.apache.org/download-80.cgi		
+		
+		
+	github :
+		- Used to manage the Source Code Repositories. 		
+			https://github.com/
+			
+Next :
+	
+		Build Tools - Maven 
+				Maven Build Tools 
+					- Create Maven Console and Web Applications
+					- Create Maven Springboot Web Applications 
+					
+###############
+27th Feb. 2024 	
+###############
+
+		Build Tools - Maven 
+				Maven Build Tools 
+					- Create Maven Console and Web Applications
+					- Create Maven Springboot Web Applications 
+					
+		Build Tools - Maven - used to build Java applications 
+		
+		Using Maven : 
+			Application Build - Compile the code, create artifacts, perform unit-testing 
+
+				- Build  - It is a process of compiling the source code and create artifacts(Binaries - *.war / *.jar/ *.exec) 
+				- Unit Testing
+				
+		Jdk - 
+		
+		Maven 
+		
+		Eclipse IDE -- Is basically meant for Java Application Development.
+					- Create Maven Console and Web Applications
+					- Create Maven Springboot Web Applications 
+
+		Maven Project :
+		
+			pom.xml 	- Project Object Model 
+				- Will be part of the Java Application Project
+				- It is used to define the properties of application artifacts 
+				- It is used to define dependencies and the plugins required to perform build/unit-testing
+				
+			Maven Goals : Actions we perform
+				● mvn clean - to clean the target folder.
+				● mvn compile - to compile the source code
+				● mvn test - to compile and execute junit test cases
+				● mvn package - to compile, test and create artifacts
+				● mvn install - to install the package to local repository.
+				● mvn deploy - to deploy the package from local repository to remote repository.
+
+			mvn clean package 
+
+			Java Web Application Project : - 
+
+			My_Web_App - Folder 
+			
+			Maven Project Structure :::			# Java Maven Desktop/Console/terminal Application;
+
+			MVN_Poject1				# Project Name 
+				src 
+					main			# Maintain the source code *.java - Business Logic 
+						*.java
+					test			# Maintain the Test Cases and Test Data - JUnit 
+						*.java
+				target
+					artifacts *.war / *.jar
+				pom.xml 			==> defines the application artifacts, plugins and all the required depedencies
+
+				JRE_Libraries
+				MVN_Libraries	
+
+
+			Programming Languages : Java/Python/C#.Net 
+					- These are used to develop business applications 
+			
+			
+			Scripting Languages		: javascripts/python_scripts/shell_scripts/groovy Scripts/yaml_Scripts 
+					- These are used to perform process automation
+								
+		- Create Java Maven Console and Web Applications
+		
+		Pre-Requisites :
+		
+			JDK,Eclipse,tomcat to be installed in Local Machine.
+
+			Eclipse Workspace : Folder where we maintain the Projects
+			
+			Goto - File Menu - New - Maven Project
+			
+			Maven Project Archetype --> It is template to create the project.
+
+
+		Create a Maven Console Application :
+				Desktop Application :::	
+						Group_ID
+							org.apache.maven.archetype
+						Artifact_ID
+							maven-archetype-simple
+						
+		Create a Maven Web Application 				- Integrate Eclipse and Tomcat Web Application Server
+														Tomcat by default run in port 8080
+						Group_ID
+							org.apache.maven.archetype
+						Artifact_ID
+							maven-archetype-webapp	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>www.loksaieta.com</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="jumbotron" style="background-color:white">
+      <img src="https://octodex.github.com/images/spidertocat.png" alt="Spidertocat"
+           class="img-responsive center-block" style="width:250px"/>
+      <h2 class="text-center">Hello Team</h2>
+      <p class="text-center">Spring Boot Web Application </p>
+  </div>
+</body>
+</html>							
+		
+		Maven Repositories :::	Are used to maintain the Maven Dependencies and Plugins 
+		
+		https://mvnrepository.com/
+		
+			Local Repository
+			
+			Remote Repository
+			
+			
+		Java Web Application Framework :
+			Springboot - 
+			
+			Spring Intializr 
+			
+			https://start.spring.io/
+
+
+Next :
+
+		Craete a Maven Project and try Junit Testing 
+		
+		Python Fundamentals 
+
+###############
+28th Feb. 2024 	
+###############
+
+
+		Craete a Maven Project and try Junit Testing 
+		
+		
+		Unit Testing  is done by the developers
+		
+			Create Test data/Test Cases
+		
+		Payment_Module --> already 5 functions 
+		
+		 create a new function 
+		 - 1 to 10 lines of code.
+		
+		Python Fundamentals 
+		
+		
+		Dev 	-> Unit Testing 
+		
+		QA 
+		
+		UAT 
+
+
+###############
+28th Feb. 2024 	
+###############
+
+
+	Python Fundamentals :::
+	
+	Programming Language(Create Business Applications) (vs) Scripting Language(Create Process Automation) ????
+	
+	Java 
+	Python 
+	C# 
+	
+	
+	groovy
+	yaml 
+	python_scripting
+	
+	
+	Programming Language :::
+	
+		- Develop the Business Logic / Applications - Web/Desktop/Mobile
+		
+	C,C++,Java, ==> 
+	
+	Write the Application Programs ???
+	
+	Write the Scripting ???
+	
+	Requirement of the Program:
+	
+		Programming Language ???
+		
+			IT Industry is for Data !
+			
+			Handling Data!
+			
+			What is Data ?	- It is a raw fact - without any meaning!
+			
+			What is Information ? - It is a processed Data.
+			
+			INDIA ?? --> Data
+			
+			INDIA is a Country ?? --> Information 
+			
+		Programming Language ::		Logic!
+		
+			- Variables?
+			- Data type - numberic/string/.....
+			- int a = 5;		# a=5
+			- int stud_Ids = [1,2,3,4,5,6]		- using array - index starts from zero = "HEllo"
+			- Conditional Statements - if, switch case 
+			- Loops - for loop, while, do-while 
+			- Handle the String, List
+			- file system - File Handling - create/write/update/delete  = Sequential
+			- Database - MySQL/ORACLE
+			- Remote Server handling
+			
+			
+		Logical Thinking! - 
+		
+			Install Python in windows Machine!
+				Python IDLE -> Command line utility - CLI
+				https://www.python.org/downloads/
+
+			Install Visual Studio Code 
+				https://code.visualstudio.com/download
+				
+				
+		Write Python programs - Console and Web Application Programs :::
+		
+		Logical Thinking! - 
+		
+			How to create the Application Logic ?
+			
+			SDLC 
+				Requirement Analysis 
+				Design 	- Algorithms  - Written in high level language - It is step-by-step process to execute a task
+						- Flow Charts
+				Code 
+				
+		Algorithms to calculate sum of two numbers ?
+		
+		int a = 8
+		int b = 5
+		
+		int c = a + b 
+		
+		print c 
+		
+		a = 10998989898989898989890
+		b = 9.2
+		c= ?
+				
+				
+###############
+29th Feb. 2024 	
+###############
+
+
+		Python :
+			IDEs - PyCharm 
+			Visual Studio Code - IDEs - Open Source 
+			
+			Visual Studio 	- IDE 		.Net Framework
+			
+			echo "Hello" 		# Linux Shell 
+			a=5
+			
+			print("Hello")		# Python 
+			a = 5
+			
+			python --version 
+			python .\pypgm1.py
+			
+		
+			String ::
+				mystr = "Hello Team"
+			
+			List ::									# Can be re-writable
+			
+				mylist1 = [1,"asdf", "afsdfas"]
+				
+			Tuple ::								# Read Only List
+				mytuple1 = (1,"asdf", "afsdfas")
+			
+			Dictionary ::							# Based on key:value pairs
+			
+				myjsonDS1 = {1:"sam",2:"Tom"}
+			
+			Add the Products to Cart : 
+			
+				List of Items : ['Mobile','Laptop','Watch']
+				
+			Online Banking Transation:
+			
+				Tuple Sequence is used for this!
+			
+			Handling the Json/Yaml files which are based on key:value pair
+			
+				{
+					Student_Name 	: "asdfasd"
+					Student_ID 		: "1001"
+					Student_Dept	: "IT"
+				}
+	
+	
+			Create Web Applications using Python :::
+			
+				Tomcat - Web Application Server 
+	
+	
+			In Python : 
+			
+				Flask 	- Web Application Server 
+				Django 
+	
+				Python Web Application :::
+				
+					- Web Application Framework 
+					
+							Django
+							Flask 
+	
+				Flask Web Application Framework to craete python web application :
+				
+					1. Visual Studio Code 
+					2. Create a Project Folder
+					3. app.py 		# Import Flask in app.py
+					4. Create templates folder 
+							sample.html 
+							
+					5. Open Terminal from VS Code 
+					6. pip install Flask
+					6. set FLASK_APP=sample
+					7. python -m flask run
+					
+						localhost:5000
+						
+						http://127.0.0.1:5000
+
+
+
+#app.py
+				
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+
+def sample():
+	return render_template("sample.html")
+
+if "__name__" == "__main__":
+	app.run(debug=True)	
+
+
+
+#sample.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>www.loksaieta.com</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="jumbotron" style="background-color:white">
+      <img src="https://octodex.github.com/images/spidertocat.png" alt="Spidertocat"
+           class="img-responsive center-block" style="width:250px"/>
+      <h2 class="text-center">Hello Team</h2>
+      <p class="text-center">SA-Python Web App Demo </p>
+  </div>
+</body>
+</html>	
+
+
+Next ::
+	Fundamentals of SQL :::
+		
+	GIT 
+
+	Jenkins 
+	
+	
+###############
+4th Mar. 2024 	
+###############
+		
+	Fundamentals of SQL :::
+	
+	SQL : ---> Structured Query Language!
+	
+	What is Data ? 
+	
+		Is a raw fact.
+	
+	INDIA 
+	
+	Information :
+	
+		Processed Data 
+	
+	INDIA is a Country 
+	
+
+	To store a raw text, What we use ?
+	
+		Memory/Volume/Address space :
+		
+		Variable Is an identifier of the data item stored in a memory location.
+		
+		country = "India"
+		
+		File:
+		
+		country.txt 
+		
+			INDIA is a Country
+			
+			INDIA 
+		
+		File System -> Is sequential form.
+			It is used for Batch Process. Bulk Data Transfer/Load.
+			
+			json / yaml / xml 
+			
+		Transaction Data ::::
+			
+				Random mode of data transfer using the key field.
+				
+				
+		Database Management System :
+
+			System that helps to manage the data in the from of Tables 
+			
+			
+		Database : It is a collection of Tables 
+		
+		Tables   : It is a Rows and Columns 
+		
+		Table Students_Info:
+
+		Stud_Adm_no		Stud_Name		Contact_Number		Email_Id			Course_Name
+		
+		1001			zzzzzz			1231231231			asdfa@asd.com		DevOps 
+		1002			cccccc			123123123			asw@asd.com			ML
+		ddddddddd		1003
+		
+		
+		Relational Database Management System 
+		
+			MySQL Database Server 
+			Oracle 
+			
+		RDBMS uses SQL - Structured Query Language to create and Manage the Database and its components
+		
+		Application Architecture :::
+		
+		3-tier Application Architecture 
+		
+			Web_site : User_Registration
+		
+			Front_End Design Layer		# Helps the End-Users to access the Application in GUI(Grapical User Interface) Mode 
+			
+			Application Layer			# Used to Create the Application Logic and Validations 
+			
+			Back_End(DataBase) Layer	# Used to Store/manage/retrieve the Data in Database
+			
+			
+		2-tier Application Architecture
+		
+			Front_End
+			
+			Application Layer 
+		
+		1-tier Application Architecture
+		
+			Blog sites / articles - Static web page 
+		
+		In Applications
+			
+			SQL is used in the Application Layer to interact with Database.
+		
+
+		SQL Installation ::
+		
+		Install SQL Server 
+		
+				https://www.microsoft.com/en-in/sql-server/sql-server-downloads
+				
+				https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16&redirectedfrom=MSDN
+
+		Table Students_Info:
+
+		Stud_Adm_no		Stud_Name		Contact_Number		Email_Id			Course_Name
+		
+		1001			zzzzzz			1231231231			asdfa@asd.com		DevOps 
+		1002			cccccc			123123123			asw@asd.com			ML
+				
+		
+		SQL Queries:
+		
+			DDL --> Data Definition Language 
+					Create,Alter,truncate,drop 
+					truncate - used to delete all the records from the table
+					drop	 - used to delete all the records along with the table 
+			DML --> Data Management Language
+					Insert 
+					update
+					delete	- used to delete the specific record(s) from the table
+					select 
+				
+			TCL --> Transaction Control Language
+					
+			DCL --> Data Control Language
+						Grant, Revoke 
+		
+		Table :
+		
+		drop table Emp_Details;
+		
+		alter table Emp_Details add Address char(20);
+		
+		create table Emp_Details(Emp_no char(6),Emp_Name char(20));
+		
+		insert into Emp_Details(Emp_no, Emp_Name) values ('1001',"asdfasdf");
+		
+		Emp_Details ::
+		
+		Emp_No		Emp_Name		Emp_Department		Contact_Number		EMail_ID				DOB					DOJ
+		
+		1001		asdf			It					123123123			asdf@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		1002		asdfw			It					123133123			asdfw@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		1003		asdfd			It					123123123			asdfd@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		1004		asdff			It					123113123			asdff@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		
+		//update table Emp_Details set Emp_Department = "CSE";
+		
+		
+		update table Emp_Details set Emp_Department = "CSE" where Emp_No = '1001';
+		
+		Emp_Details ::
+		
+		Emp_No		Emp_Name		Emp_Department		Contact_Number		EMail_ID				DOB					DOJ
+		
+		1001		asdf			CSE					123123123			asdf@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		1002		asdfw			It					123133123			asdfw@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		1003		asdfd			It					123123123			asdfd@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		1004		asdff			It					123113123			asdff@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		
+		delete from Emp_Details where Emp_No = "1004";
+		
+		Emp_Details ::
+		
+		Emp_No		Emp_Name		Emp_Department		Contact_Number		EMail_ID				DOB					DOJ
+		
+		1001		asdf			CSE					123123123			asdf@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		1002		asdfw			It					123133123			asdfw@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		1003		asdfd			It					123123123			asdfd@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		
+		
+		Select Query :::
+		
+		select * from Emp_Details;
+
+		Emp_No		Emp_Name		Emp_Department		Contact_Number		EMail_ID				DOB					DOJ
+		
+		1001		asdf			CSE					123123123			asdf@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		1002		asdfw			It					123133123			asdfw@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		1003		asdfd			It					123123123			asdfd@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+
+
+		select * from Emp_Details where Emp_Department = "IT";
+		
+		Records: 2 
+		1002		asdfw			It					123133123			asdfw@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		1003		asdfd			It					123123123			asdfd@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		
+		
+		select * from Emp_Details where Emp_No = "1003";
+
+		1003		asdfd			It					123123123			asdfd@cbs.com			dd/mm//yyyy			dd/mm/yyyy
+		
+		
+		Where Clause - used to set some conditions and filter the tabel entries :
+		
+		= , <, >, =! <=, >= 				===> Conditional Operators 
+		
+		and or not 							===> Logical Operators 
+		
+		Emp_No		Emp_Name		Emp_Department		Contact_Number		EMail_ID				DOB					DOJ				Location 
+		
+		1001		asdf			CSE					123123123			asdf@cbs.com			dd/mm//yyyy			dd/mm/yyyy		Pune
+		1002		asdfw			It					123133123			asdfw@cbs.com			dd/mm//yyyy			dd/mm/yyyy		Pune
+		1003		asdfd			It					123123123			asdfd@cbs.com			dd/mm//yyyy			dd/mm/yyyy		Pune
+		
+		select * from Emp_Details where Emp_Department = "IT" and Location = "Pune";
+		
+		1002		asdfw			It					123133123			asdfw@cbs.com			dd/mm//yyyy			dd/mm/yyyy		Pune
+		1003		asdfd			It					123123123			asdfd@cbs.com			dd/mm//yyyy			dd/mm/yyyy		Pune
+		
+		select * from Emp_Details where Emp_Department = "CSE" and Location = "Pune";
+		
+		1001		asdf			CSE					123123123			asdf@cbs.com			dd/mm//yyyy			dd/mm/yyyy		Pune
+		1002		asdfw			CSE										asdf@cbs.com			dd/mm//yyyy			dd/mm/yyyy		Pune
+		
+		
+		
+		Query Optimization:
+		
+		Constraints / Conditions :::		Are used to maintain the Integrity of the Database Tables.
+			Referential Integrity Constraint 
+					Before Insert/update/ check the parent table.
+					Before Delete check the entries in child table. 
+
+			Unique Constraint
+			Non-Null 
+			Primary Key			(Unique & Non-Null)
+			Check Constraint
+			
+		
+		Conditions :::
+
+		Emp_Details ::			Primary_Table/Parent Table 
+		
+		Emp_No		Emp_Name		Emp_Department		Contact_Number		EMail_ID				DOB					DOJ				Location 
+		
+		1001		asdf			CSE					123123123			asdf@cbs.com			01/01/1900			01/01/2024		Pune
+		1002		asdfw			It					123133123			asdfw@cbs.com			01/12/1900			01/01/2024		Pune
+		1003		asdfd			It					123123123			asdfd@cbs.com			dd/mm//yyyy			dd/mm/yyyy		Pune
+		1004		asdfq			It					<null_value>		asdfq@cbs.com			dd/mm//yyyy			dd/mm/yyyy		Pune
+		
+		Emp_Salary_Details :
+		
+		Emp_No		basic_pay	
+		
+		1001		>10000
+		
+		
+		Emp_Project_Details :::		Child Table 
+		
+		Emp_no		Project_ID		Project_Name		Location			Manager 				Client_Name
+		1002		P1001			Proj_name1			Chennai				aaaaaa					zzzzzz		
+		
+		
+		Emp_Salary_Details ::: Child Table 
+		
+		Emp_no		Basic_pay		HRA			DA				Gross_Payment		Net_Pay
+
+		1001		1231231			1231		21312			12312				zzzzzzzzz
+		
+
+		
+		Select Statements :::
+		
+		https://www.sqlzoo.net/wiki/SQL_Tutorial
+		
+Next :::
+
+			Version Control System using GIT : 
+		
+			Jenkins 
+				shell commands 
+				groovy scripts 
+								
+		
+		DevOps Engineers : Scripting Languages - Linux-Shell, groovy, yaml and python 
+		
+	
+###############
+5th Mar. 2024 	
+###############		
+		
+		
+		Version Control System Using GIT
+		
+		Jenkins 
+		
+		Linux ! 
+		
+		AWS ????
+		
+		AWS DevOps Services :
+		
+		Build Tools :
+		Maven - 
+		
+		Open Source DevOps Tools :
+		
+		GIT CLI / GITHUB 
+		Jenkins 
+		Docker 
+		Kubernetes
+		Ansible
+		Terraform 
+		
+		Continuous Development :::
+		
+		
+		Version Control System Using GIT :::
+		
+		A Developer
+		
+		Create a index.html 
+		
+		<html> 
+		--
+		--
+		--
+		--
+		--
+		--
+		--
+		--
+		</html> 
+		
+		save as index.html 
+		
+		Testing access the page .
+		
+		<html>
+		--
+		--
+		--
+		--
+		--adfasdfsdf
+		--asdfasdf
+		--
+		</html> 	
+		
+		save index.html
+		
+		
+		<html>
+		--
+		--
+		--asdfasdf
+		--asdf
+		--adfasdfsdf
+		--asdfasdf
+		--
+		</html> 	
+		
+		save index.html		
+		
+		Version Control System :::
+		
+		
+			index.html_V1.0		(Tag/Verion_Number/Commit_ID)
+			index.html_V1.1
+			index.html_V1.2
+			index.html_V1.3
+			index.html_V1.4
+			index.html_V1.5
+			
+		Developers they use Version Control System to save theire changes.
+		
+		
+		Version Control System :::
+		
+			- It is used to Version Control the Source Code Changes 
+			- It is used to track the changes 
+			
+		Types of Version Control System :::
+		
+			Local VCS 				# It is used to version the changes in the local machine - for single user.
+			
+			Centralized VCS 		# It is used to maintain the source code in a central server 
+									# Users should always be online to working with Centralized VCS 
+									# If the Centralized Server is Down, Users cannot access the Repositories.
+			
+			Distributed VCS 		# It is used to maintain the source code in a Remote servers
+									# Allows users to work in offline mode 
+									# The Copies of Repositories are maintained in multiple servers, All Users will have their local copy of the repository.
+									
+									
+			GIT :::
+			
+				- GIT is one of the Open-Source Distributed Version Control System 
+				- It is used to Version Control the Source Code Changes 
+				- It is used to Track the Changes 
+				- It is used to perform Parallel Development using Branching Techniques.
+				
+			Repository --> 	It is collection of Folders and files 
+							Developers maintain the Source Code Project Folders and Files
+			
+			Terminologies :::
+			
+			
+			Git CLI		--> To be installed in the Local Machine 
+			
+			Remote Servers :
+			Github 		--> Remote git Repository 
+			gitlab
+			bitbucket 
+			Azure Repo 
+			AWS CodeCommit 
+			
+			
+			Install GIT Client in the Local Machine 
+			
+			
+			Working with GIT ::::
+			
+			Git File Workflow ::: 60% of GIT 
+			
+			Distributed VCS :::
+			
+			Local Machine																			<---->				Remote Server
+			(Install Git Client)
+			
+			Working Directory 		--->	Staging Area 	---> 	Local Repository 					---->				Remote Repository
+			
+			index.html 				add 	index.html		commit 			index.html_V1.0				push 					index.html_V1.0
+			index.html				add 	index.html		commit			index.html_V1.1                                     index.html_V1.1
+			index.html				add 	index.html		commit			index.html_V1.2                                     index.html_V1.2
+			index.html				add 	index.html		commit			index.html_V1.3                                     index.html_V1.3
+			index.html				add 	index.html		commit			index.html_V1.4                                     index.html_V1.4
+			index.html				add 	index.html		commit			index.html_V1.5                                     index.html_V1.5
+			
+			
+			
+			
+			Developers' Workload :::
+
+			- Enhancement Project / Bug fixing 		# Remote Repository already exist
+			
+			- New Project 							# Remote Repository Might not be present at initial stage of the project.
+			
+			
+			git commands :::
+			
+			git clone 				==>		Is used to Clone/copy the entire remote repository to the local Machine
+
+			git add 				==>		Is used to add the changes from working directory to staging area.				
+			
+			git commit 				==> 	Is used to commit the changes from staging area to local repository.
+			
+			git push 				==> 	Is used to push the changes from Local Repository to Remote Repository
+			
+			git fetch / git pull 	:::
+							
+							- Both Git Fetch and Git Pull are used to handle the incremental Changes from Remote to Local Repository.
+							
+							- git fetch --> Is just used to check for the incremental changes. If there are any changes exist in the remote repository, it will update the changes in the local repository. NOT is the Working Directory.
+							
+							- git pull --> Is used to check for the incremental changes and if there are any changes exist in the remote repository, it will update the changes in the local repository as well as in the Working Directory.	
+
+								git pull ==> git fetch and git merge
+			
+			
+			
+			fork 					==>		Is used to Copy one Remote Repository to Another Remote Repository
+			
+			
+			Install GIT Client in the Local Machine ::::
+			
+			https://git-scm.com/downloads
+			
+			Install git client in Windows Machine :::
+			
+				- git bash 			# Uses the Linux prompt to work with git cli commands.
+				- git cmd
+				- git gui 
+			
+			
+Summary ::
+
+			Install GIT in the Local Machine 
+			
+			Go thru the class recordings and class notes before you join the next session!
+			
+			
+		
+###############
+6th Mar. 2024 	
+###############		
+
+		Working with GIT :::
+		
+		Git Cli Commands :::
+		
+		
+		Open git bash in windows machine 
+		
+		Folder Structure :::
+		
+		Project Folder 		--> Workspace - working directory 
+			file1
+			file2
+			file3
+		
+		
+			Distributed VCS :::
+			
+			Local Machine																			<---->				Remote Server
+			(Install Git Client)
+			
+			Working Directory 		--->	Staging Area 	---> 	Local Repository 					---->				Remote Repository
+			index.html 				add 	index.html		commit 			index.html_V1.0				push 					index.html_V1.0	
+
+		Open Git bash 
+
+		cd d:
+		
+		mkdir SA-Feb24-Projects 
+		
+		cd SA-Feb24-Projects 
+		
+		mkdir project1 
+		mkdir project2	==> Local Repository.
+		
+		
+		Initialize local git repository
+		
+		git init 				# 	Is used to initialize a repository, 
+									It creates a default branch called master.
+									It Creates GIT Directory.(Used by git to manage the versioning)
+									
+									Branch is the logical copy of Repo.
+		
+		
+		echo "rec1" >> file1.txt
+		
+		git status				# Used to find the current status of repository
+		
+		git add file1.txt 		
+		
+		git commit -m "Created file1.txt"
+		
+		git log					# Is used to get the list of commit in the repository 
+		
+		HEAD 					# 	Is a git pointer used to refer latest commit of the current branch.
+									It is Maintained by git.
+									
+		
+		git global / local Configuration :::			# Should be done before the initial commit.
+				
+		GIT Global Configuration 	-- # Is applicable for the repositories 
+		
+			git config --global user.name "Loksai"
+			
+			git config --global user.email "loksai@asf.com"
+		
+		GIT Local Configuration 	-- # Is applicable for a specific repository  
+		
+			git config user.name "Loksai"
+			
+			git config user.email "loksai@asf.com"
+			
+			
+		Repository :::
+		
+		As per process :::
+		
+		git init 
+		
+		
+		echo "rec1" >> file1.txt 
+		
+		git add file1.txt 
+
+			git config --global user.name "Loksai"
+			
+			git config --global user.email "loksai@asf.com"		
+			
+		git commit -m "Created file1.txt"
+		
+		
+		git add :
+		
+			git add <file_name>
+			
+			git add <file_name1> <file_name2>
+			
+			git add *.doc 
+			
+			git add .							# Add all the files to staging area.
+		
+		
+		
+		Un-Stage the files Changes.
+		
+		
+			git rm --cached file1.txt			# It will remove the change from staging Area 
+												# Changes will be back to Working Directory 
+												
+			git rm -f file1.doc 				
+												# It will remove the file from staging Area as well as from the working Directory.  											
+		
+			
+		git log :								# Is used to get the list of commit in the repository
+		
+			git log --oneline 
+			
+			git log -2 
+			
+			git log --stat -2
+			
+			git log --oneline -2
+		
+		
+		git show <commit_id>
+		
+		Undo Actions :::
+		
+			git reset 
+		
+			git revert 
+		
+		
+				Both git reset and revert are used to undo the changes :
+				
+		
+		git reset :::
+		
+			Syntax :
+			
+				git reset <commit_id> <reset_Option>
+				
+				reset Options : 
+				
+					It used to Undo the Changes.
+					It will update the Commit History 
+					It will not create any new commit point to track the changes.
+					As a best practice it is NOT recommended to use git reset HARD Option in the shared repository.
+				
+				git reset --soft :
+				
+					It is used to take the changes from local repository back to staging area.
+					The Changes will be available in both staging area and working directory.
+					Head pointer will be reset to the specific commit.
+				
+				
+				git reset --mixed : # Default
+					It is used to take the changes from local repository back to working Directory.
+					The Changes will be available in the working directory. i.e., the changes will be removed from local repo. and staging area. 
+					Head pointer will be reset to the specific commit.
+				
+				git reset --hard :
+				
+					This is the permanent deletion.
+					The Changes will be permanently removed from local repository, staging area as well as from the working directory.
+					Head pointer will be reset to the specific commit.
+					
+		
+		git reset <commit_id>
+			
+			
+		git ls-files	# is used to get the list of files that are being tracked by git. 
+						# The staged / committed entires.
+		
+
+Summary :
+
+		Install Git 
+		
+		Work with Git Misc. Command in Local Repo. 
+		
+		
+		
+Next ::		
+		git revert --> 	It is an alternative to git reset --hard
+						It can be used in the shared repository.
+		
+		branch Techinques
+		
+		git rebase, squash, stash 
+		
+		git ignore, 
+		
+		git remote repos..
+		
+###############
+7th Mar. 2024 	
+###############		
+		
+		git revert --> 	It is an alternative to git reset --hard
+						It can be used in the shared repository.
+
+
+		RESET ::
+		Repo1 
+		
+			master --> c1,c2,c3,c4,c5(latest)
+			
+			git reset --hard c3
+			
+			log :	c1,c2,c3(latest) 
+			
+			git reset --hard c2 
+			
+			log : 	c1, c2(latest)
+			
+			
+		git revert --> 	It is an alternative to git reset --hard
+						It can be used in the shared repository.
+						It is used to revert a specific commit point.
+						It will maintain the commit history.
+						
+						git revert is same as git reset --hard. 
+						The difference is git reset will not create new commit point, but git revert will create a commit point to track the changes.
+						
+			Syntax: 
+					git revert <commit_id>
+					
+					
+			Repo1:
+			
+				master : c1,c2,c3,c4,c5
+				
+				
+		
+		
+		git ignore :
+		
+		What is the purpose of Local Repository ?
+		
+		What is the purpose of Remote Repository ?
+		
+		Java_Web_Application Project Directory:
+		
+			src/main/java 
+			src/test/java 
+			target/
+			application.properties 
+			pom.xml
+			database_Credentials
+			App_Configurations
+			
+		git ignore : Is used to ignore the files/folders in the git repository from tracking 
+		
+		git init 
+		
+		vi .gitignore 
+			target/
+			*.war 
+			
+		save the file 
+		
+		git add . 
+		
+		git commit -m "Initial Commit for .gitignore"
+		
+		
+			Working Directory 		--->	Staging Area 	---> 	Local Repository 					---->				Remote Repository
+			index.html 				add 	index.html		commit 			index.html_V1.0				push 					index.html_V1.0	
+		
+		
+		GIT Branching Techniques :::
+		
+		GIT is used for Parallel Development :::
+		
+		Repo1:
+		
+		Java_Web_Application Folder :
+		
+			src/main/java 
+				sign.java 
+				
+		How maintain the integrity of the Source Code Repository ???
+		
+		Branches ::::
+		
+		Repo1: 
+		
+			master 	branch				# Default Branch 		# Prod Copy. 
+			cm1,cm2,cm3
+			s1.txt,s2.txt,s3.txt
+			
+		
+		
+			Repo1 
+				master - cm1,cm2,cm3 		--> sign.java 
+						cm1,cm2,cm3,f1cm1,f2cm2						# Prod Copy. 		
+				
+					feature_branch1 - cm1,cm2,cm3 		--> sign.java 
+					
+									- cm1,cm2,cm3,f1cm1,f2cm2
+									
+									git merge to master !
+									
+		GIT Branch ::
+						Is used to create an isolated area to make the incremental changes in the repository
+						It is used to maintain the integrity of the master branch in Source Code Repository
+						It is used to Perform parallel development 
+						Branches helps the developers to independently work on their changes without impacting the master branch
+						
+		GIT Branching Strategies / Techniques :::
+		
+						It is the policy which is defined to maintain the integrity of the Master Branch.
+						
+		Parallel Development ???
+		
+		Scenario 1 :
+		
+			Project_Repo1
+				master - cm1,cm2,cm3 
+						cm1,cm2,cm3,f1cm1,f1cm2				#Upon merging feature1
+						
+					feature1 	- cm1,cm2,cm3
+								- cm1,cm2,cm3,f1cm1,f1cm2
+		
+		Scenario 2 :				
+			Project_Repo1
+				master 	- cm1,cm2,cm3 
+						- cm1,cm2,cm3,Developer1_Branch_Changes	
+				
+					Developer1_Branch :	- cm1,cm2,cm3
+										- cm1,cm2,cm3,f1cm1,f1cm2,f2cm1,f2cm2			# Upon Merging from feature1 and feature2
+										
+						feature1 		- cm1,cm2,cm3
+										- cm1,cm2,cm3,f1cm1,f1cm2
+						feature2		- cm1,cm2,cm3
+										- cm1,cm2,cm3,f2cm1,f2cm2
+		
+		
+		Scenario 3 :				
+			Project_Repo1
+				master 	- cm1,cm2,cm3 
+				
+					Intregration_Branch 	- cm1,cm2,cm3 
+									cm1,cm2,cm3,Developer1_Branch_Changes,Developer2_Branch_Changes  # Upon merging from Dev1 & Dev2 Branches
+				
+						Developer1_Branch :	- cm1,cm2,cm3
+											- cm1,cm2,cm3,f1cm1,f1cm2,f2cm1,f2cm2			# Upon Merging from feature1 and feature2
+											
+							feature1 		- cm1,cm2,cm3
+											- cm1,cm2,cm3,f1cm1,f1cm2
+							feature2		- cm1,cm2,cm3
+											- cm1,cm2,cm3,f2cm1,f2cm2
+						
+			
+						Developer2_Branch :	- cm1,cm2,cm3
+											- cm1,cm2,cm3,f1cm1,f1cm2,f2cm1,f2cm2			# Upon Merging from feature1 and feature2
+											
+							feature1 		- cm1,cm2,cm3
+											- cm1,cm2,cm3,f1cm1,f1cm2
+							feature2		- cm1,cm2,cm3
+											- cm1,cm2,cm3,f2cm1,f2cm2
+						
+		
+		
+		Scenario 4 :				
+			Project_Repo1
+				master 	- cm1,cm2,cm3,
+						- cm1,cm2,cm3,cm4						# cm4 is - Upon merging from Release Branch
+				
+					Release_Branch - cm1,cm2,cm3,Team1_Changes,Team2_Changes 
+				
+						Intregration_Branch1 	- cm1,cm2,cm3 														# Team1
+										cm1,cm2,cm3,Developer1_Branch_Changes,Developer2_Branch_Changes  # Upon merging from Dev1 & Dev2 Branches
+					
+							Developer1_Branch :	- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2,f2cm1,f2cm2			# Upon Merging from feature1 and feature2
+												
+								feature1 		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2
+								feature2		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f2cm1,f2cm2
+							
+				
+							Developer2_Branch :	- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2,f2cm1,f2cm2			# Upon Merging from feature1 and feature2
+												
+								feature1 		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2
+								feature2		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f2cm1,f2cm2
+							
+				
+						Intregration_Branch2 	- cm1,cm2,cm3 														# Team2
+										cm1,cm2,cm3,Developer1_Branch_Changes,Developer2_Branch_Changes  # Upon merging from Dev1 & Dev2 Branches
+					
+							Developer1_Branch :	- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2,f2cm1,f2cm2			# Upon Merging from feature1 and feature2
+												
+								feature1 		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2
+								feature2		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f2cm1,f2cm2
+							
+				
+							Developer2_Branch :	- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2,f2cm1,f2cm2			# Upon Merging from feature1 and feature2
+												
+								feature1 		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2
+								feature2		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f2cm1,f2cm2
+							
+			
+		
+		Working with Branches :::
+		
+			Craete Branch :::
+			
+			git branch				# To get the list of branches 
+			
+			git branch <new_Branch_Name>	# Used to create a new branch 
+
+			git switch -c <feature1>	# To Create and switch to that new branch.
+			
+			git switch <master>			# Just to switch to the existing branch.
+			
+			git checkout -b <new_Branch_Name>	# Used to Create and switch to that new branch.
+			
+			Git Merge ::: Is used to Merge the Changes from current Branch to Target Branch.
+			
+			Repo1 :
+				master - cm1
+
+					git switch -c feature1 
+					
+					echo "rec" > asdf
+					
+					git add .
+					
+					commit  
+					
+					git switch master 
+					
+					git merge feature1 			# Should be executed from the Target Branch
+					
+
+Next :
+			Merging multiple branches 
+			
+			Handling Merge Conflicts 
+		
+			git rebase, squash, stash 
+			
+			git ignore, 
+			
+			git remote repos..		
+
+			
+				
+###############
+11th Mar. 2024 	
+###############	
+				
+			Merging multiple branches 
+			
+			Handling Merge Conflicts 
+		
+			git rebase, squash, stash 
+			
+			git remote repos..				
+				
+			Jenkins
+			
+			
+			
+			- Merging multiple branches 
+				
+				master --> cm1		file1.txt 
+										record1
+											
+									file1.txt 					# Upon merge from feature1 
+										record1
+										record2 from feature1										
+										
+				
+					feature1 --> cm1
+									file1.txt 
+										record1
+										record2 from feature1 
+					
+					git switch master 
+					
+					git merge feature1
+					
+					
+					feature2 --> cm1
+									file1.txt 
+							        	record1
+										record2 from feature2
+
+										
+				
+			
+			- Handling Merge Conflicts 		
+										
+				Merge Conflict :::
+
+					Why the Merge Conflict Occurs ?
+						When we try to merge the from more than one feature branch or user into the same file and at the same record, we get merge conflict.
+					
+					How to fix the Merge Conflict ?
+					
+						- Identify the file(s) causing the issue in target branch.
+						- Open the file and review the file content.
+						- Decide which record has to be retained/deleted.
+						- Remove the header and footer, Update the file content
+						- add the changes and commit the changes in target branch.
+1.----------
+2.----------			
+		
+		User1: 2. **********
+		USer2: 2. $$$$$$$$$$
+		
+		
+			In DevOps era, we should always prevent the merge conflict!
+			
+			Using DevOps - Implement shift-left approach 
+			
+		
+
+	GIT Rebase ::::
+		
+		Repo1: 
+		
+			master --> 	cm1
+						cm1,f1cm1			# Upon merge from feature1 	
+						
+						cm1,f2cm1,f1cm1 	# Upon merge from feature2 without rebase 
+						
+						cm1,f1cm1,f2cm1		# Upon merge from feature2 with rebase
+		
+				feature1 --> 	cm1 
+								cm1,f1cm1 
+								
+							git switch master 
+							
+							git merge feature1 
+				
+				
+				feature2 --> cm1 
+								cm1,f2cm1 
+							
+							git rebase master 		# Should be executed in the current branch.
+							
+								cm1,f1cm1,f2cm1 
+								
+								
+							git switch master 		# Should be executed in the current branch.
+							
+							git merge feature2 		# Should be executed in the target branch.		
+		
+		
+		
+		
+				- It is used to maintain the linear commit history 
+				- It is used to prevent the merge conflict in the target branch 
+				- As as a best practise, it is always recommended to use rebase before merge.
+						- Because, rebase will help to keep the current branch in sync with target branch. 
+			
+		
+		Delete Branch from repository :
+		
+			git branch -D feaure1			
+			
+		Rename Branch :
+		
+			git branch -M feature2_branch
+			
+			
+			
+			
+		GIT SQUASH :	
+			
+			- It is a merge Option used to combine more that one commit and create a new commit point.
+			
+			
+		Repo1: 
+		
+			master : cm1 
+			
+					 cm1,f1cm1,2,3,4,5,6,7,8,...........,100			# Upon merge from feature1
+					 
+					 cm1,f1changes
+			
+				feature1 : cm1,f1cm1,2,3,4,5,6,7,8,...........,100
+				
+					git merge feature1 
+			
+					git merge --squash feature1
+					
+						==> Commit Message ?
+									"f1changes" 
+									
+			
+		Scenario 4 :				
+			Project_Repo1
+				master 	- cm1,cm2,cm3,
+						- cm1,cm2,cm3,cm4						# cm4 is - Upon merging from Release Branch
+				
+					Release_Branch - cm1,cm2,cm3,Team1_Changes,Team2_Changes 
+				
+						Intregration_Branch1 	- cm1,cm2,cm3 														# Team1
+										cm1,cm2,cm3,Developer1_Branch_Changes,Developer2_Branch_Changes  # Upon merging from Dev1 & Dev2 Branches
+					
+							Developer1_Branch :	- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2,f2cm1,f2cm2			# Upon Merging from feature1 and feature2
+												
+								feature1 		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2
+								feature2		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f2cm1,f2cm2
+							
+				
+							Developer2_Branch :	- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2,f2cm1,f2cm2			# Upon Merging from feature1 and feature2
+												
+								feature1 		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2
+								feature2		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f2cm1,f2cm2
+							
+				
+						Intregration_Branch2 	- cm1,cm2,cm3 														# Team2
+										cm1,cm2,cm3,Developer1_Branch_Changes,Developer2_Branch_Changes  # Upon merging from Dev1 & Dev2 Branches
+					
+							Developer1_Branch :	- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2,f2cm1,f2cm2			# Upon Merging from feature1 and feature2
+												
+								feature1 		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2
+								feature2		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f2cm1,f2cm2
+							
+				
+							Developer2_Branch :	- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2,f2cm1,f2cm2			# Upon Merging from feature1 and feature2
+												
+								feature1 		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f1cm1,f1cm2
+								feature2		- cm1,cm2,cm3
+												- cm1,cm2,cm3,f2cm1,f2cm2
+										
+			
+			
+Next ::
+
+		Git stash 
+		
+		Git Remote Repositories 
+		
+		Intro. to Jenkins 
+			
+			
+			
+###############
+12th Mar. 2024 	
+###############	
+			
+	
+		GIT Stash :::
+		
+			- It is used to save the uncommited changes to a temporary area.
+			
+		Repo :
+		
+			master - create a file, add to staging area, commit 
+			
+			Developer1 :
+			
+			Repo: 
+				master :
+					feature1 -- file1.txt ...... adding the changes to staging area
+
+				hot-fix_branch --> deal with prod_issues.
+				
+			Prod Issue :  adhoc task 
+			
+			
+			List - LIFO
+			
+			
+			git stash list 					# Used to get the list of stashed entries 
+			
+			git stash save "save_Message"	# Used to create a stash list by adding the uncommited changes from staging 
+			
+			git stash apply 				# Used to apply the latest entry from the stash list, back to staging area 
+			git stash apply stash@{1} 		# Used to apply a specific entry from the stash list, back to staging area 
+			
+			git stash drop 					# Used to delete/drop the latest entry from the stash list
+			git stash drop stash@{1}		# Used to delete/drop a specific entry from the stash list
+			
+			git stash pop 					# Used to apply the latest entry from the stash list, back to staging area as well as remove that entry from the stash list.
+			git stash pop stash@{1}			# Used to apply a specific entry from the stash list, back to staging area as well as remove that entry from the stash list. 
+				
+			git stash clear					# Used to clean-up the stash list	
+			
+				
+		
+		git cherrypick <commit_id> 			# Used to merge a specific commit(s) to the target branch
+											# As a best practice, we are not encourged to used Cherry-pick.(Avoid using it)
+	
+		git merge <feature_branch_Name>
+	
+							
+		Git Remote Repositories	:::
+		
+		github - remote git repository ::::
+		
+		Azure Repo 
+		
+		AWS Code commit 
+		
+		gitlab 
+		
+		bitbucket 
+				
+		www.github.com :::
+		
+		
+			Create repo in github 
+			
+			create branch 
+				
+			add changes 
+
+			commit changes 
+			
+			merge using pull request 
+			
+			
+			Developers' Work load ???
+			
+				Enhancement Project / Bugfixing 
+				
+			
+			
+			git clone 				==>		Is used to Clone/copy the entire remote repository to the local Machine
+			
+					git clone <remote_repo_clone_url>
+
+					git clone https://github.com/SA-DevOps-22Feb24/testremoterepo1.git
+
+					git clone -b main https://github.com/SA-DevOps-22Feb24/testremoterepo1.git
+					
+					
+			git add 				==>		Is used to add the changes from working directory to staging area.				
+			
+			git commit 				==> 	Is used to commit the changes from staging area to local repository.
+			
+			git push 				==> 	Is used to push the changes from Local Repository to Remote Repository
+			
+				to the changes to remote repositories 
+				we need github credentials.
+				
+				username :
+				access token :
+				
+				
+				Before push event we need to create github access token.
+				
+			
+			git fetch / git pull 	:::
+							
+							- Both Git Fetch and Git Pull are used to handle the incremental Changes from Remote to Local Repository.
+							
+							- git fetch --> Is just used to check for the incremental changes. If there are any changes exist in the remote repository, it will update the changes in the local repository. NOT is the Working Directory.
+							
+							- git pull --> Is used to check for the incremental changes and if there are any changes exist in the remote repository, it will update the changes in the local repository as well as in the Working Directory.	
+
+								git pull ==> git fetch and git merge
+			
+			
+			git remote -v 			==>		Is used to get the list of remote repository linked to the local repository
+			
+			git push -u origin localfeature1		==> Is used to push the changes to the remote repository using the credentials.
+			
+
+			git remote -v 			==>		Is used to get the list of remote repository linked to the local repository
+
+			Developers' Work load ???
+			
+				
+				New Project 
+
+			git init 
+			
+			git add 
+			 
+			git commit 
+			
+			git remote add origin https://github.com/SA-DevOps-22Feb24/dummyrepo1.git
+			
+			git push -u origin master 			
+			
+			
+Summary :::
+
+		git file workflow
+		
+		git branching techniques
+		
+		git merge / merge-conflicts / rebase / squash / stash 
+		
+		git ignore 
+		
+		git reset/ revert 
+		
+		Handling remote git repositories
+			
+			
+				
+Next ::
+
+		Jenkins 
+		
+		
+###############
+13th Mar. 2024 	
+###############				
+			
+		DevOps - Build Orchestration Tool : Jenkins
+			
+			- Jenkins is a open-source build orchestration tool
+			- Used to create end-to-end DevOps CI/CD Pipeline
+			- Automate Build and Deployments 
+			- Jenkins is based on Master Slave Architecture
+			- Jenkins Pipeline scripts are written using groovy scripting language 
+			
+		Jenkins Architecture :
+			- Master Slave Architecture
+			
+		   Ubuntu Machine :	Virtual Machine
+			
+			AWS Cloud Platform :
+				VM Ubuntu 
+					Jenkins_Master (VM)		--> It is used to create Jenkins CICD Pipeline Projects/Jobs and Schdule the jobs to run in slave Nodes.
+						Jenkins_Slave Node (VM) 	--> It is used to run the actual Jenkins Pipeline Project.
+
+
+			Tools to be installed :
+				Jenkins_Master 	(VM)	--> 	git, jdk, jenkins
+					Jenkins_Slave (VM)	-->     Build Tools: git, jdk, maven 
+				
+			Tools to be installed :
+				Jenkins_Master 	(VM)	--> 	git, jdk, jenkins, jdk, maven, python  
+
+				Java 
+				python 
+				.net 
+				angular 
+				nodejs 
+				
+			Tools to be installed :
+				Jenkins_Master 	(VM)	--> 	git, jdk, jenkins		==> Create and schedule Jenkins CICD Pipeline Projects/Jobs
+					
+					Jenkins_Slave1 (VM)	-->     Java - git, jdk, maven 				
+					Jenkins_Slave2 (VM)	-->     Python - git, python  								
+					Jenkins_Slave3 (VM)	-->     .Net   - git, .Net Framework  
+					Jenkins_Slave4 (VM)	-->     Angular  
+					Jenkins_Slave5 (VM)	-->     NodeJS  					
+				
+			
+			Skill : Handling Git and basic scripting knowledge 
+			
+			
+				
+				
+				
+	Environments ::
+	
+	Non-Prod Environments																	Prod Environment
+	
+		Dev Environment - Local Machine(Laptop)
+		Testing Environment
+			QA  Quality Assurance Testing 
+				functional/integration/regression....
+			UAT	User Acceptance Testing											-->				Production Environment(Servers)
+				This testing will be done using LIVE production data.
+				business users
+						
+					
+			Source_Code 
+			Build 
+			Unit Testing 
+			Deploy to QA 
+			Perform QA Testing 
+			Deploy to UAT 
+			Perform UAT Testing 
+			Deploy to Production Environment
+					
+		
+		
+		Roles and Responsibilities of DevOps Engineer :
+		
+		Jenkins can be used ::
+		
+			Developers' Perspective :
+				- Developers are just the consumers of Jenkins CICD Projects				
+
+			DevOps Perspective : - Administration of Jenkins Servers and Tools 
+				
+				
+				- Installation of Jenkins
+				- Jenkins System Management 
+				- Management of Plugins 
+				- Tools Management 
+				- User Management
+				- Credential Management 
+				- Security Management 				
+				- Configuration of jenkins Master Slave Nodes Architecture
+				- Create CICD Pipeline Projects/Jobs 
+				- Onboard the Applications to Jenkins 
+				- Troubleshooting the Issues related to Jenkins/pipeline Projects 
+				- Back-up and Recovery
+				- Periodic upgrade of Jenkins and its plugins
+				
+			
+				
+			Installation of Jenkins :::
+			
+				Open-Source Tools :: Jenkins 
+			
+				Managed Services :
+					AWS Code-Pipeline Service 
+					Azure Pipeline Service 
+					gitlab-ci
+					
+					
+				Installation of Tools :
+
+					Infra-Structure (VM)
+					Install the pre-requisites - jdk 
+					Install the Actual Tool    - jenkins - Runs in default port: 8080 as a webservice
+					Post Installation Activities - Set the Jenkins service and start the service
+				
+				0. Create AWS - Free Tier Account 
+							12 months access
+							You can keep ur EC2 Instances running for 750 Hours / Month
+								1 VM 	- 750 hrs/month
+								10 VMs 	- 75 hrs/month
+							Stop the instance as soon the task is over.
+							Terminate the instance, when it is not required.
+							Data Transfer rate - 1GB 						
+					
+					
+				1. Launch AWS - Ubuntu Machine 
+					- 2 VMs - (Jenkins_Master,Jenkins_Slave)
+				2. Enable Port 8080 
+				
+				3. Install Jenkins along with its depedencies 
+						https://www.jenkins.io/doc/book/installing/						
+				4. Start Jenkins 
+				
+
+0. Launch Ubuntu v20.04 - AWS EC2 Instance 	
+		Enable Port 8080
+
+		Connect to EC2 Instance using :
+			EC2 Instance Connect 
+			SSH Agents : 
+				MobaXterm 	https://mobaxterm.mobatek.net/download.html
+				Putty 
+			Terminal 
+			
+1. Install the pre-requisites :::
+
+# Install Jdk:
+
+sudo -i 			
+sudo apt update -y
+
+sudo apt install openjdk-17-jre -y 						
+java -version						
+
+2. Install the Actual tool :::
+ 								
+#Install Jenkins:
+
+sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+
+sudo apt-get update -y
+
+sudo apt-get install jenkins -y		
+
+jenkins --version 
+			
+Install GIT :
+
+sudo apt install git -y
+			
+			/var/lib/jenkins			# Jenkins Default Directory.
+			
+			Access Jenkin using web browser:
+				<public_ip_addr>:8080
+				13.232.252.38:8080
+		
+
+###############
+14th Mar. 2024 	
+###############	
+
+		Jenkins Plugins Management :::
+		
+			Plugins are the extension to Jenkins.
+			
+				Maven Build 
+				
+				Install/Uninstall/upgrade the plugins
+
+
+		User and Security Management 
+
+
+
+		Create CICD Pipeline Projects/Jobs :::
+		
+		Jenkins Projects/Jobs :::
+		
+			- Free-Style Projects
+					Manually Configure any type of Projects 
+					Completely Manual configuration
+				
+			
+			- Pipeline Projects
+					Written using groovy script 
+					Used to Create CICD Pipeline Jobs
+					
+					
+			Free-Style Jenkins Project 
+				- Configure the Project 
+				
+				
+			Handling Variables in Jenkins :::
+					
+				- Environment Variables 		# pre-defined keywords 
+
+					echo "jenkins-${JOB_NAME}-${BUILD_NUMBER}"					
+					
+					"${JOB_NAME}" 
+
+					
+				- User Defined Variables 		# It is used to pass run time inputs to job
+
+
+			Pipeline Projects :::		# Writted using groovy scripts & Reusable!
+			
+				- Scripted Pipeline 	# it uses the typical scripting Language. 
+				
+				
+				- Declarative Pipeline 	# are the simplified version of Scripted Pipelines
+				
+				
+				Pipelines are composed of many Stages:
+				Stages are composed of many task enclosed in step:
+				
+				Pipeline 
+				{
+					Stages 
+					{
+						stage1
+						{
+							Steps
+							{
+								task1
+								task2
+								task3
+							}
+						}
+						stage2
+						{
+							Steps
+							{
+								task1
+								task2
+								task3
+							}
+						}
+					}
+				}
+			
+		
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Hello1') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Hello2') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}			
+
+
+Create a Jenkins Pipeline to Build and Deploy the Application to QA Environment :::	
+
+
+
+				
+pipeline {
+    agent any
+
+    stages {
+        stage('SCM Checkout') {
+            steps {
+                echo 'Hello World'
+				git "clone the Repo"
+            }
+        }
+        stage('Java Application Build') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Deploy to QA Environment') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Deploy to UAT Environment') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Deploy to PROD Environment') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}					
+		
+Next :
+
+			Master-Slave Configure
+
+			How to Define the Pipeline stages for CICD
+		
+		
+		
+###############
+18th Mar. 2024 	
+###############		
+
+		Master-Slave Configure
+
+		How to Define the Pipeline stages for CICD		
+	
+			Tools to be installed :
+				Jenkins_Master 	(VM)	--> 	git, jdk, jenkins		==> Create and schedule Jenkins CICD Pipeline Projects/Jobs
+					
+					Jenkins_Slave1 (VM)	-->     Java - git, jdk, maven 				
+					Jenkins_Slave2 (VM)	-->     Python - git, python  								
+					Jenkins_Slave3 (VM)	-->     .Net   - git, .Net Framework  
+					Jenkins_Slave4 (VM)	-->     Angular  
+					Jenkins_Slave5 (VM)	-->     NodeJS 	
+					
+		
+		Launch :
+		
+			2 VMs 
+			
+				Jenkins_Master		--> git, jdk, jenkins 
+					Jenkins_Slave 	--> jdk, git, maven 
+			
+				SSH Connection - port:22  
+					Host_Name 
+					User_Name 
+					SSH_Key
+					
+				Types of Authentications :::
+				
+					Password based Authentication
+					Token based Authentication
+					Key based Authentication
+						- private key and public key 
+					Passwordless Authentication
+					
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#Configure Slave Node1 for Java Maven App. :
+
+#Launch VM - 
+#0. Launch Ubuntu v20.04 - AWS EC2 Instance 
+
+sudo -i
+
+apt update -y 
+
+Install Java ::
+
+sudo apt update -y 
+sudo apt install openjdk-11-jre -y
+java -version
+
+Install GIT :
+
+sudo apt install git -y
+
+Install Maven - Build Tool :
+https://maven.apache.org/install.html
+
+sudo apt install maven -y 
+
+
+Create User in Jenkins Slave Machine & Create SSH Keys 
+
+	SSH Keys --> is composed of public and private keys 
+
+
+#Add User : 
+
+useradd devopsadmin -s /bin/bash -m -d /home/devopsadmin
+
+su - devopsadmin
+
+#ssh-keygen
+
+#for Ubuntu ::
+ssh-keygen -t rsa -b 1024 -m PEM
+
+
+ls ~/.ssh 
+
+#You should see following two files:
+
+#id_rsa - private key
+#id_rsa.pub - public
+
+
+cat id_rsa.pub > authorized_keys
+
+chown -R devopsadmin /home/devopsadmin/.ssh
+chmod 600 /home/devopsadmin/.ssh/authorized_keys
+chmod 700 /home/devopsadmin/.ssh
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Add Slave Node to Jenkins Master using Jenkins Console.				
+			
+			
+
+	Create Jenkins CICD Pipeline ::
+	
+	
+pipeline {
+    agent { label 'slave1' }
+
+    stages {
+        stage('SCM Checkout') {
+            steps {
+                echo 'Perform SCM Check-Out'
+				echo 'Cloning Java Maven App Code'
+				git 'https://github.com/LoksaiETA/Java-mvn-app2.git'
+            }
+        }
+        stage('Java Application Build') {
+            steps {
+                echo 'Perform Java Maven Application Build'
+                sh 'mvn clean package'
+            }
+        }
+        stage('Deploy to QA Environment') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}	
+
+
+Deploy the artifacts to QA Environment :::
+
+
+
+	Jenkins_Master 
+		Jenkins_Slave   - *.war
+		
+	QA_Server	(VM) 
+		Tomcat Web Application Server - 8080
+		
+######################Install TOMCAT Application Server on Ubuntu :::
+#Launch VM - 
+#0. Launch Ubuntu v20.04 - AWS EC2 Instance
+add port 8080 in the inbound rule.
+
+sudo -i
+
+sudo apt update -y 
+
+
+sudo apt install openjdk-11-jre -y 
+java -version
+
+#edit /etc/profile & add JAVA_HOME
+
+#/usr/lib/jvm/java-11-openjdk-amd64/
+
+vi /etc/profile
+
+export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
+
+source /etc/profile
+
+Install Tomcat ::  https://tomcat.apache.org/download-80.cgi
+
+https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.99/bin/apache-tomcat-8.5.99.tar.gz
+
+
+cd /opt
+wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.99/bin/apache-tomcat-8.5.99.tar.gz
+
+tar -xvzf /opt/apache-tomcat-8.5.99.tar.gz
+
+mv apache-tomcat-8.5.99 tomcat
+
+#Start Tomcat Server:
+#Goto:
+
+cd /opt/tomcat/bin
+./startup.sh
+
+###########################################
+
+#Add User : 
+
+useradd devopsadmin -s /bin/bash -m -d /home/devopsadmin
+
+su - devopsadmin
+
+#ssh-keygen
+
+#for Ubuntu ::
+ssh-keygen -t rsa -b 2048 -m PEM
+
+ls -a
+
+ls ~/.ssh 
+
+#You should see following two files:
+
+#id_rsa - private key
+#id_rsa.pub - public
+
+
+cat id_rsa.pub > authorized_keys
+
+chown -R devopsadmin /home/devopsadmin/.ssh
+chmod 600 /home/devopsadmin/.ssh/authorized_keys
+chmod 700 /home/devopsadmin/.ssh
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#make devopsadmin user as a owner to tomcat dir :
+
+chown -R devopsadmin /opt/tomcat
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~		
+		
+
+What is Deployment ?
+
+	Process of copying the artifacts to target environments.
+	
+	Source Machine 														Target Machine 
+	
+		Slave_Node1							=========>						Tomcat_Server
+		
+			Source Path:															Target Path:
+			
+				target/mvn-hello-world.war 															/opt/tomcat/webapps/mvn-hello-world.war 
+
+Next :::
+
+	Through Jenkins Master How to Achieve this?
+
+		In jenkins Master, install Publish Over SSH Plugin  
+	
+	Complete the Jenkins CICD Pipeline 
+	
+	Build Trigger
+
+	Email Notifications 
+	
+	Trigger Jenkins Pipeline from Eclipse using code commits 
+	
+	
+###############
+19th Mar. 2024 	
+###############
+
+	
+
+		In jenkins Master, install Publish Over SSH Plugin  		
+
+		Using this plugin the remote servers can be connect to Jenkins Master 
+		
+		goto manage jenkins --> Plugins --> Avaliable Plugins - search for 'Publish Over SSH'  --> install and restart JEnkins
+		
+		Goto Manage Jenkins --> System --> Publish Over SSH plugin for configuration.
+		
+
+CICD Pipeline :::
+	
+pipeline {
+    agent { label 'slave1' }
+
+    stages {
+        stage('SCM Checkout') {
+            steps {
+                echo 'Perfomr SCM Check-Out'
+				echo 'Cloning Java Maven App Code'
+				git 'https://github.com/LoksaiETA/Java-mvn-app2.git'
+            }
+        }
+        stage('Java Application Build') {
+            steps {
+                echo 'Perform Java Maven Application Build'
+                sh 'mvn clean package'
+            }
+        }
+        stage('Deploy to QA_Tomcat_Server') {
+            steps {
+ 				script {
+ 				    sshPublisher(publishers: [sshPublisherDesc(configName: 'SA-Tomcat_Server', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '.', remoteDirectorySDF: false, removePrefix: 'target/', sourceFiles: 'target/mvn-hello-world.war')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
+ 				}
+                
+            }
+        }
+    }
+}	
+		
+		
+
+	Build Triggers :::
+	
+		Automated Build 
+		
+		Scheduling the jobs 
+		
+		
+		- Build Periodic:
+				- It is used to run the job based on the cron tab schedule.
+				Eg.: Trigger the Jobs for every 2 minute 
+				
+				Non-Prod Servers												Prod Servers 
+				
+				Dev server
+				build server 
+				qa, uat 															production servers
+		
+			start all the non-prod servers Week-days at 8AM 
+			stop all the non-prod servers Week-days at 10PM 
+		
+		
+		
+		- poll SCM :::
+		
+				- It is used trigger the jenkins job if there is any commit happened in the source code repository and it gets triggered based on the schedule.
+				
+				- Both Build Periodic and Poll SCM uses the corntab for scheduling the jobs.
+				
+				Eg.: 
+				
+				H/2 * * * *
+			
+				POLL SCM will trigger the job for every 2 mins, only if there is any changes happened in the source repository.
+				
+				
+				Test Cycle :::
+				
+					8AM   -  12PM	- 3PM 		--> 3 times QA Testing happens
+				
+				
+				
+				
+		
+		- GITHUB Webhook ::
+		
+				Is used to trigger the jenkins job whenever there is a change in github source code repository 
+				
+				Need to config github webhook url in source code repository
+				
+				http://13.201.136.71:8080/github-webhook/
+				
+				<Public_IP_Address>:8080/github-webhook/
+				
+				http://20.197.33.227:8080/github-webhook/
+		
+		
+
+
+Next :::
+
+		Email Notifications :::
+		
+			gmail account --> 
+			MFA - Two - way Auth - using active Mobile Number
+			App Password - 16Bytes of token 
+			
+		
+###############
+20th Mar. 2024 	
+###############			
+
+
+		EMail Notifications using Jenkins Pipeline 
+		
+		Handling App Build and CICD Pipelines through Eclipse
+		
+		Q&A :
+
+			Using DevOps Approach 
+			
+				- Code the Application 
+				- Update the source code in the Source Code Repository like Github 
+				
+			Using DevOps Process & Tools Automate :
+			
+				- Build  - It is a process of compiling the source code and create artifacts(Binaries - *.war / *.jar/ *.exec) 
+				- Unit Testing 
+				- Promote the changes to higher environments for further testing (QA/UAT)
+				- Notify the testing teams to pick the changes for further testing		
+
+		EMail Notifications using Jenkins Pipeline 
+		
+			Mail Plugin in Jenkins:
+			
+			Configuration of Email Notification Plugins 
+			
+			valid gmail.com 
+			
+			Two-Way Authentication using Mobile Number
+			
+			Login to gmail Account 
+			goto Manage Account 
+			Select security tab from left side 
+			
+			- Enable Two-way Authentication
+			- On the same page, in the search bar - search for app password 
+			- Enter the App_Name and click Create
+			- You will get 16 bytes of app password: asdfasdfasdfasdfsdfsdfsdf
+			l@gmail.com
+			
+SMTP Server :
+smtp.gmail.com
+
+SMTP Authentication
+
+SMTP Port :: 465
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pipeline {
+    agent { label 'slave1' }
+
+    stages {
+        stage('SCM Checkout') {
+            steps {
+                echo 'Perfomr SCM Check-Out'
+				echo 'Cloning Java Maven App Code'
+				git 'https://github.com/LoksaiETA/Java-mvn-app2.git'
+            }
+        }
+        stage('Java Application Build') {
+            steps {
+                echo 'Perform Java Maven Application Build'
+                sh 'mvn clean package'
+            }
+        }
+        stage('Deploy to Tomcat_Server') {
+            steps {
+ 				script {
+ 				    sshPublisher(publishers: [sshPublisherDesc(configName: 'SA-Tomcat_Server', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '.', remoteDirectorySDF: false, removePrefix: 'target/', sourceFiles: 'target/mvn-hello-world.war')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
+ 				}
+                
+            }
+        }
+    }
+}
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+			  
+pipeline {
+    agent { label 'slave1' }
+
+    stages {
+        stage('SCM Checkout') {
+            steps {
+                echo 'Perfomr SCM Check-Out'
+				echo 'Cloning Java Maven App Code'
+				git 'https://github.com/LoksaiETA/Java-mvn-app2.git'
+            }
+             post {
+                failure {
+                  sh "echo 'Send mail on failure'"
+					mail bcc: 'l@gmail.com', body: 'Jenkins Jobs Status ', cc: 'l@gmail.com', from: '', replyTo: '', subject: 'SCM-Checkout Failed ', to: 'l@gmail.com'
+                }
+              }
+        }
+        stage('Java Application Build') {
+            steps {
+                echo 'Perform Java Maven Application Build'
+                sh 'mvn clean package'
+            }
+             post {
+                failure {
+                  sh "echo 'Send mail on failure'"
+					mail bcc: 'l@gmail.com', body: 'Jenkins Jobs Status ', cc: 'l@gmail.com', from: '', replyTo: '', subject: 'App Build Failed ', to: 'l@gmail.com'
+                }
+              }
+        }
+        stage('Deploy to Tomcat_Server') {
+            steps {
+ 				script {
+ 				    sshPublisher(publishers: [sshPublisherDesc(configName: 'SA-Tomcat_Server', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '.', remoteDirectorySDF: false, removePrefix: 'target/', sourceFiles: 'target/mvn-hello-world.war')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])					
+ 				}
+                
+            }
+             post {
+                failure {
+                  sh "echo 'Send mail on failure'"
+					mail bcc: 'l@gmail.com', body: 'Jenkins Jobs Status ', cc: 'l@gmail.com', from: '', replyTo: '', subject: 'App Deployment Failed ', to: 'l@gmail.com'
+                }
+                success {
+                  sh "echo 'Send mail on Successful'"
+					mail bcc: 'l@gmail.com', body: "jenkins-${JOB_NAME}-${BUILD_NUMBER}", cc: 'l@gmail.com', from: '', replyTo: '', subject: 'App Deployment Successful ', to: 'l@gmail.com'
+                }
+              }
+        }
+    }
+}
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+success
+failure
+unstable
+
+
+
+	Handling App Build and CICD Pipelines through Eclipse :::
+	
+	
+	
+			Using DevOps Approach 
+			
+				- Code the Application using Eclipse IDE 
+				- Update the source code in the Source Code Repository like Github 
+				
+			Using DevOps Process & Tools Automate :
+			
+				- Build  - It is a process of compiling the source code and create artifacts(Binaries - *.war / *.jar/ *.exec) 
+				- Unit Testing 
+				- Promote the changes to higher environments for further testing (QA/UAT)
+				- Notify the testing teams to pick the changes for further testing		
+	
+pipeline {
+    agent { label 'slave1' }
+
+    stages {
+        stage('SCM Checkout') {
+            steps {
+                echo 'Perfomr SCM Check-Out'
+				echo 'Cloning Java Maven App Code'
+				git 'https://github.com/LoksaiETA/Java-mvn-app2.git'
+            }
+             post {
+                success {
+                  sh "echo 'Send mail on success'"
+					mail bcc: 'l@gmail.com', body: 'Jenkins Jobs Status ', cc: 'l@gmail.com', from: '', replyTo: '', subject: 'SCM-Checkout Successful ', to: 'l@gmail.com'
+                }
+              }
+        }
+        stage('Java Application Build') {
+            steps {
+                echo 'Perform Java Maven Application Build'
+                sh 'mvn clean package'
+            }
+             post {
+                success {
+                  sh "echo 'Send mail on Success'"
+					mail bcc: 'l@gmail.com', body: 'Jenkins Jobs Status ', cc: 'l@gmail.com', from: '', replyTo: '', subject: 'App Build Successful ', to: 'l@gmail.com'
+                }
+              }
+        }
+        stage('Approve Deployment to QA'){
+            steps{
+                
+                //----------------send an approval prompt-------------
+                script {
+                   env.APPROVED_DEPLOY = input message: 'User input required Choose "yes" | "Abort"'
+                       }
+                //-----------------end approval prompt------------
+            }
+        }
+        stage('Deploy to Tomcat_Server') {
+            steps {
+ 				script {
+ 				    sshPublisher(publishers: [sshPublisherDesc(configName: 'SA-Tomcat_Server', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '.', remoteDirectorySDF: false, removePrefix: 'target/', sourceFiles: 'target/mvn-hello-world.war')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])					
+ 				}
+                
+            }
+             post {
+                success {
+                  sh "echo 'Send mail on Successful'"
+					mail bcc: 'l@gmail.com', body: 'Jenkins Jobs Status ', cc: 'l@gmail.com', from: '', replyTo: '', subject: 'App Deployment Successful ', to: 'l@gmail.com'
+                }
+              }
+        }
+    }
+}
+	
+	
+	

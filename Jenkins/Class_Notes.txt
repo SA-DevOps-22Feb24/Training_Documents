@@ -737,7 +737,7 @@ Next :::
 			- Enable Two-way Authentication
 			- On the same page, in the search bar - search for app password 
 			- Enter the App_Name and click Create
-			- You will get 16 bytes of app password: dvpl rnmz wnjv hnnr
+			- You will get 16 bytes of app password: sdfgsdfgsdfgdfgdfgdfgdfgdf
 			l@gmail.com
 			
 SMTP Server :

@@ -696,3 +696,220 @@ Next :::
 			gmail account --> 
 			MFA - Two - way Auth - using active Mobile Number
 			App Password - 16Bytes of token 
+
+###############
+20th Mar. 2024 	
+###############			
+
+
+		EMail Notifications using Jenkins Pipeline 
+		
+		Handling App Build and CICD Pipelines through Eclipse
+		
+		Q&A :
+
+			Using DevOps Approach 
+			
+				- Code the Application 
+				- Update the source code in the Source Code Repository like Github 
+				
+			Using DevOps Process & Tools Automate :
+			
+				- Build  - It is a process of compiling the source code and create artifacts(Binaries - *.war / *.jar/ *.exec) 
+				- Unit Testing 
+				- Promote the changes to higher environments for further testing (QA/UAT)
+				- Notify the testing teams to pick the changes for further testing		
+
+		EMail Notifications using Jenkins Pipeline 
+		
+			Mail Plugin in Jenkins:
+			
+			Configuration of Email Notification Plugins 
+			
+			valid gmail.com 
+			
+			Two-Way Authentication using Mobile Number
+			
+			Login to gmail Account 
+			goto Manage Account 
+			Select security tab from left side 
+			
+			- Enable Two-way Authentication
+			- On the same page, in the search bar - search for app password 
+			- Enter the App_Name and click Create
+			- You will get 16 bytes of app password: dvpl rnmz wnjv hnnr
+			l@gmail.com
+			
+SMTP Server :
+smtp.gmail.com
+
+SMTP Authentication
+
+SMTP Port :: 465
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pipeline {
+    agent { label 'slave1' }
+
+    stages {
+        stage('SCM Checkout') {
+            steps {
+                echo 'Perfomr SCM Check-Out'
+				echo 'Cloning Java Maven App Code'
+				git 'https://github.com/LoksaiETA/Java-mvn-app2.git'
+            }
+        }
+        stage('Java Application Build') {
+            steps {
+                echo 'Perform Java Maven Application Build'
+                sh 'mvn clean package'
+            }
+        }
+        stage('Deploy to Tomcat_Server') {
+            steps {
+ 				script {
+ 				    sshPublisher(publishers: [sshPublisherDesc(configName: 'SA-Tomcat_Server', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '.', remoteDirectorySDF: false, removePrefix: 'target/', sourceFiles: 'target/mvn-hello-world.war')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
+ 				}
+                
+            }
+        }
+    }
+}
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+			  
+pipeline {
+    agent { label 'slave1' }
+
+    stages {
+        stage('SCM Checkout') {
+            steps {
+                echo 'Perfomr SCM Check-Out'
+				echo 'Cloning Java Maven App Code'
+				git 'https://github.com/LoksaiETA/Java-mvn-app2.git'
+            }
+             post {
+                failure {
+                  sh "echo 'Send mail on failure'"
+					mail bcc: 'l@gmail.com', body: 'Jenkins Jobs Status ', cc: 'l@gmail.com', from: '', replyTo: '', subject: 'SCM-Checkout Failed ', to: 'l@gmail.com'
+                }
+              }
+        }
+        stage('Java Application Build') {
+            steps {
+                echo 'Perform Java Maven Application Build'
+                sh 'mvn clean package'
+            }
+             post {
+                failure {
+                  sh "echo 'Send mail on failure'"
+					mail bcc: 'l@gmail.com', body: 'Jenkins Jobs Status ', cc: 'l@gmail.com', from: '', replyTo: '', subject: 'App Build Failed ', to: 'l@gmail.com'
+                }
+              }
+        }
+        stage('Deploy to Tomcat_Server') {
+            steps {
+ 				script {
+ 				    sshPublisher(publishers: [sshPublisherDesc(configName: 'SA-Tomcat_Server', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '.', remoteDirectorySDF: false, removePrefix: 'target/', sourceFiles: 'target/mvn-hello-world.war')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])					
+ 				}
+                
+            }
+             post {
+                failure {
+                  sh "echo 'Send mail on failure'"
+					mail bcc: 'l@gmail.com', body: 'Jenkins Jobs Status ', cc: 'l@gmail.com', from: '', replyTo: '', subject: 'App Deployment Failed ', to: 'l@gmail.com'
+                }
+                success {
+                  sh "echo 'Send mail on Successful'"
+					mail bcc: 'l@gmail.com', body: "jenkins-${JOB_NAME}-${BUILD_NUMBER}", cc: 'l@gmail.com', from: '', replyTo: '', subject: 'App Deployment Successful ', to: 'l@gmail.com'
+                }
+              }
+        }
+    }
+}
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+success
+failure
+unstable
+
+
+
+	Handling App Build and CICD Pipelines through Eclipse :::
+	
+	
+	
+			Using DevOps Approach 
+			
+				- Code the Application using Eclipse IDE 
+				- Update the source code in the Source Code Repository like Github 
+				
+			Using DevOps Process & Tools Automate :
+			
+				- Build  - It is a process of compiling the source code and create artifacts(Binaries - *.war / *.jar/ *.exec) 
+				- Unit Testing 
+				- Promote the changes to higher environments for further testing (QA/UAT)
+				- Notify the testing teams to pick the changes for further testing		
+	
+pipeline {
+    agent { label 'slave1' }
+
+    stages {
+        stage('SCM Checkout') {
+            steps {
+                echo 'Perfomr SCM Check-Out'
+				echo 'Cloning Java Maven App Code'
+				git 'https://github.com/LoksaiETA/Java-mvn-app2.git'
+            }
+             post {
+                success {
+                  sh "echo 'Send mail on success'"
+					mail bcc: 'l@gmail.com', body: 'Jenkins Jobs Status ', cc: 'l@gmail.com', from: '', replyTo: '', subject: 'SCM-Checkout Successful ', to: 'l@gmail.com'
+                }
+              }
+        }
+        stage('Java Application Build') {
+            steps {
+                echo 'Perform Java Maven Application Build'
+                sh 'mvn clean package'
+            }
+             post {
+                success {
+                  sh "echo 'Send mail on Success'"
+					mail bcc: 'l@gmail.com', body: 'Jenkins Jobs Status ', cc: 'l@gmail.com', from: '', replyTo: '', subject: 'App Build Successful ', to: 'l@gmail.com'
+                }
+              }
+        }
+        stage('Approve Deployment to QA'){
+            steps{
+                
+                //----------------send an approval prompt-------------
+                script {
+                   env.APPROVED_DEPLOY = input message: 'User input required Choose "yes" | "Abort"'
+                       }
+                //-----------------end approval prompt------------
+            }
+        }
+        stage('Deploy to Tomcat_Server') {
+            steps {
+ 				script {
+ 				    sshPublisher(publishers: [sshPublisherDesc(configName: 'SA-Tomcat_Server', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '.', remoteDirectorySDF: false, removePrefix: 'target/', sourceFiles: 'target/mvn-hello-world.war')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])					
+ 				}
+                
+            }
+             post {
+                success {
+                  sh "echo 'Send mail on Successful'"
+					mail bcc: 'l@gmail.com', body: 'Jenkins Jobs Status ', cc: 'l@gmail.com', from: '', replyTo: '', subject: 'App Deployment Successful ', to: 'l@gmail.com'
+                }
+              }
+        }
+    }
+}
+	
+	
+	

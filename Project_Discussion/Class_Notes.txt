@@ -1,0 +1,178 @@
+
+SA - DevOps 
+Project Discussion :
+
+***********************
+Day - 1 | 1st May 2024
+***********************
+
+
+	Banking Domain
+	
+	Insurance Domain 
+	
+	Health Care Domain 
+	
+	
+	Detailed Accessment!
+	
+		- Solution 
+		- No. of Applications to onboard 
+			- 500 Applications at enterprise level ?
+			
+		PoC - Proof of Concept!
+		
+		
+		Kubernetes :
+				- Is a Open Source Container Orchestration Tool
+				
+		AWS 	- ECS,ECR,EKS
+		
+		Azure 	- ACS,ACR,AKS
+		
+		GCP 	- GCE,GCR,GKE 
+		
+		To Work in Kubernetes:
+		
+			Minikube  - single node  
+			
+			kubeadm   - work with multiple nodes 
+						production 
+						- To configure multiple Node Cluster.
+						
+			Mananged Services - EKS,AKS,GKE 
+			
+		How to implement the DevOps Solutions ???
+		
+		1. Micro-Service Based Application Architecture
+		2. Containerized Applications Deployment using Kubernetes
+		
+	
+		1. Design and Create Infra-Structure!
+		
+		Servers and Tools Needed to Create CI-CD Pipeline ?
+		
+		1. List of Server(VMs)?
+		
+			- Infra-Structure Perspective 
+			
+				- Create AWS EC2 Instances 			- Terraform
+				- Configure the serves				- Ansible
+			
+			
+			- DevOps Perspective		- Create CI/CD Pipeline to automate build and deployments
+			
+				- Jenkins_Master Node 				# VM1
+					Jenkins_Slave Node				# VM2
+				Kubernetes_Master 					# VM3
+					Kubernetes_WorkerNode1			# VM4
+					Kubernetes_WorkerNode2			# VM5
+					
+		
+			- Production Support/Monitor Teams' Perspective 
+			
+				- Monitor the Kubernetes Cluster/Jenkins_Slave_Nodes using Prometheus & Grafana
+			
+				
+				
+		2. Purpose of each Server?
+		
+				- Jenkins_Master Node 			# To Create CICD Pipeline and Schedule to run in the slave node.
+		
+				- Jenkins_Slave(Build_Server)	# To perform Application Build - compile & create artifacts. - *.war
+												# To Perform Docker Application Image Build - Create Application Image
+				
+				- Kubernetes_Master				# Is a Cluster/Control Plane using to Schedule the Deployments in Kubernetes Worker Nodes.		
+					- Kubernetes_WorkerNode1	# Used to actually run the applications in the form of Pods	
+					- Kubernetes_WorkerNode2	# Used to actually run the applications in the form of Pods				
+				
+		3. List of Tools to be install in each server? 
+		
+				- Jenkins_Master Node			# jdk, git, Jenkins 				
+					- Jenkins_Slave Node		# git, jdk, Maven, docker Engine	
+					
+				- Kubernetes_Master				# kubelet,kubectl,kubeadm,docker,container-D(CRI)
+                	- Kubernetes_WorkerNode1	# kubelet,kubectl,kubeadm,docker,container-D(CRI)
+                	- Kubernetes_WorkerNode2	# kubelet,kubectl,kubeadm,docker,container-D(CRI)
+
+
+
+
+
+		CICD Pipeline Stages :::
+		
+			- SCM Checkout 
+			
+			- Application Build 
+			
+			- Application Image Build
+
+			- Publish Application Image to Container Registry
+			
+			- Deploy the Application Images to Target Environments(QA/UAT/PROD) using Kubernetes
+
+		Environments :
+
+			DEV 	
+			Build 
+			QA
+			UAT 	
+			PROD 
+				
+
+	Steps to Implement :
+	
+	1. Launch all the Required VMs 
+	2. Ensure all the Required Ports are enabled 
+	3. Install all the Required Tools in each VM 
+	4. Create User in all the Required VMs with proper ssh keys to enable authentication 
+	5. Setup the connection between the servers 
+	6. Validate the Connection
+	7. Create CICD Pipeline with all these 5  stages 
+	8. Validate the CICD Pipeline for Application Build, Docker Images, and Deployments in Kubernetes.
+
+
+
+
+
+	Additional Inputs: 
+		Jenkins Pipeline :
+		
+		Infra-Structure Perspective:
+		
+		
+		CICD Pipeline :::
+		
+		Scenario 1 :
+			Pipeline 1:
+			- SCM_Checkout --> Build --> Deploy to QA_Server --> QA Testing --> Deploy to UAT --> UAT Testing --> Deploy to Prod --> Prod Test/Monitor
+			
+		Scenario 2 :
+		
+			Pipeline 1 :
+				- SCM_Checkout --> Provision QA_Server --> Configure QA_Server
+				
+			Pipeline 2 :
+				- SCM_Checkout --> Application Build --> Deploy to the Newly Created QA_Server	
+		
+		Scenario 3 :
+
+			Pipeline 1:
+			- SCM_Checkout --> Application Build --> Provision QA_Server --> Configure QA_Server --> Deploy to QA_Server --> QA Testing --> Delete QA_Server
+
+		Scenario 4 :
+
+			Pipeline 1:
+			- SCM_Checkout --> Application Build --> Provision QA_Server --> Configure QA_Server --> Deploy to QA_Server --> QA Testing
+		
+		
+		Environments :
+
+			DEV 	
+			Build 
+			QA
+			UAT 	
+			PROD 
+				
+
+	

@@ -111,14 +111,7 @@ Day - 1 | 1st May 2024
 			
 			- Deploy the Application Images to Target Environments(QA/UAT/PROD) using Kubernetes
 
-		Environments :
 
-			DEV 	
-			Build 
-			QA
-			UAT 	
-			PROD 
-				
 
 	Steps to Implement :
 	
@@ -128,12 +121,8 @@ Day - 1 | 1st May 2024
 	4. Create User in all the Required VMs with proper ssh keys to enable authentication 
 	5. Setup the connection between the servers 
 	6. Validate the Connection
-	7. Create CICD Pipeline with all these 5  stages 
+	7. Create CICD Pipeline with all these 5 stages 
 	8. Validate the CICD Pipeline for Application Build, Docker Images, and Deployments in Kubernetes.
-
-
-
-
 
 	Additional Inputs: 
 		Jenkins Pipeline :
@@ -163,8 +152,7 @@ Day - 1 | 1st May 2024
 		Scenario 4 :
 
 			Pipeline 1:
-			- SCM_Checkout --> Application Build --> Provision QA_Server --> Configure QA_Server --> Deploy to QA_Server --> QA Testing
-		
+			- SCM_Checkout --> Application Build --> Provision QA_Server --> Configure QA_Server --> Deploy to QA_Server --> QA Testing	
 		
 		Environments :
 
@@ -175,4 +163,168 @@ Day - 1 | 1st May 2024
 			PROD 
 				
 
+***********************
+Day - 2 | 2nd May 2024
+***********************	
+
+	Steps to Implement :
 	
+	1. Launch all the Required VMs 
+	2. Ensure all the Required Ports are enabled 
+	3. Install all the Required Tools in each VM 
+	4. Create User in all the Required VMs with proper ssh keys to enable authentication 
+	5. Setup the connection between the servers 
+	6. Validate the Connection
+	7. Create CICD Pipeline with all these 5 stages 
+	8. Validate the CICD Pipeline for Application Build, Docker Images, and Deployments in Kubernetes
+	
+	
+	https://github.com/StarAgileDevOpsTraining/star-agile-banking-finance.git
+	
+		CICD Pipeline Stages :::
+		
+			- SCM Checkout 
+			
+				https://github.com/StarAgileDevOpsTraining/star-agile-banking-finance.git
+			
+			- Application Build 
+			
+				mvn clean package
+				
+				pom.xml 
+			
+			- Application Image Build
+			
+				Dockerfile 
+
+			- Publish Application Image to Container Registry
+				
+				Active Dockerhub account to login and publish the Image 
+			
+			- Deploy the Application Images to Target Environments(QA/UAT/PROD) using Kubernetes	
+			
+				Kubernetes Manifest *.yaml
+	
+	
+	
+	Input Source Code Repository :
+	
+		https://github.com/StarAgileDevOpsTraining/star-agile-banking-finance.git
+		
+		Firstly fork the repository and used your own repository in the pipeline
+		
+	
+	
+	1. Launch all the Required VMs 					# Should be ubuntu v22.04
+	2. Ensure all the Required Ports are enabled 
+	3. Install all the Required Tools in each VM 
+	4. Create User in all the Required VMs with proper ssh keys to enable authentication 
+	5. Setup the connection between the servers 
+	6. Validate the Connection
+	7. Create CICD Pipeline with all these 5 stages 
+	8. Validate the CICD Pipeline for Application Build, Docker Images, and Deployments in Kubernetes	
+	
+
+		Jenkins_Master Node 				# VM1		- ami ??? ubuntu 20.04 is no longer eligible for free tier, So, use 22.04
+			Jenkins_Slave Node				# VM2
+		Kubernetes_Master 					# VM3
+			Kubernetes_WorkerNode1			# VM4
+			Kubernetes_WorkerNode2			# VM5
+						
+			
+	In Kubernetes Master and Worker Nodes :
+	
+		- Enable all the required ports
+		
+		- Setup the Host Name 
+		
+		- Install Docker Engine 
+		
+		- Install and Configure Container-D - CRI 
+		
+		- Install kubeadm, kubelet, kubectl 
+		
+		- swap off 
+		
+		- enable kubelet
+		
+	Only in Kubernetes_Master Node :
+	
+		- kubeadm init 
+		
+		- Post Initialization Activities 
+		
+	Only in Kubernetes_WorkerNodes :
+	
+		- Execute kubeadm join command to attach the worker nodes to cluster
+		
+	Integrate Jenkins_Master with Jenkins_Slave and Kubernetes_Master :::
+	
+	Install Publish Over SSH Plugin and integrate Kubernetes_Master with Jenkins_Master 
+	
+	
+
+pipeline {
+    agent { label 'slave1' }	
+
+
+	environment {	
+		DOCKERHUB_CREDENTIALS=credentials('dockerloginid')
+	} 
+    
+    stages {
+        stage('SCM Checkout') {
+            steps {
+                // Get some code from a GitHub repository
+                git 'https://github.com/LoksaiETA/BankingApp.git'
+                //git 'https://github.com/LoksaiETA/Java-mvn-app2.git'
+            }
+		}
+        stage('Maven Build') {
+            steps {
+                // Run Maven on a Unix agent.
+                sh "mvn -Dmaven.test.failure.ignore=true clean package"
+            }
+		}
+       stage("Docker build"){
+            steps {
+				sh 'docker version'
+				sh "docker build -t loksaieta/bankapp-eta-app:${BUILD_NUMBER} ."
+				sh 'docker image list'
+				sh "docker tag loksaieta/bankapp-eta-app:${BUILD_NUMBER} loksaieta/bankapp-eta-app:latest"
+            }
+        }
+		stage('Login2DockerHub') {
+
+			steps {
+				sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
+			}
+		}
+		stage('Push2DockerHub') {
+
+			steps {
+				sh "docker push loksaieta/bankapp-eta-app:latest"
+			}
+		}
+        stage('Deploy to Kubernetes Environment') {
+            steps {
+		script {
+		sshPublisher(publishers: [sshPublisherDesc(configName: 'Kubernetes-Cluster', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: 'kubectl apply -f kubernetesdeploy.yaml', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '.', remoteDirectorySDF: false, removePrefix: '', sourceFiles: 'kubernetesdeploy.yaml')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
+		       }
+            }
+    	}
+    }
+}	
+	
+	
+	
+	
+	
+	
+Test the DevOps Workflow on Development Perspective :::
+
+	Make the code changes and trigger the build :::
+	
+		Enhance the project using github webhook & Email Notification
+	
+		
